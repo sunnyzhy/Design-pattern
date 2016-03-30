@@ -1,0 +1,6 @@
+D:\Design-pattern\csharp\csharp\bin\Debug\csharp.exe.config
+D:\Design-pattern\csharp\csharp\bin\Debug\csharp.exe
+D:\Design-pattern\csharp\csharp\bin\Debug\csharp.pdb
+D:\Design-pattern\csharp\csharp\obj\Debug\csharp.csprojResolveAssemblyReference.cache
+D:\Design-pattern\csharp\csharp\obj\Debug\csharp.exe
+D:\Design-pattern\csharp\csharp\obj\Debug\csharp.pdb

@@ -1,0 +1,33 @@
+﻿生成启动时间为 2016/3/29 14:16:49。
+项目“D:\Design-pattern\c++\AbstractFactoryPattern\AbstractFactoryPattern.vcxproj”在节点 2 上(Rebuild 个目标)。
+ClCompile:
+  D:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\AbstractFactoryPattern.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+  stdafx.cpp
+  D:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\AbstractFactoryPattern.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt AbstractFactoryPattern.cpp AudiBody.cpp AudiEngine.cpp AudiFactory.cpp AudiWheel.cpp BenzBody.cpp BenzEngine.cpp BenzFactory.cpp BenzWheel.cpp
+  BenzWheel.cpp
+  BenzFactory.cpp
+  BenzEngine.cpp
+  BenzBody.cpp
+  AudiWheel.cpp
+  AudiFactory.cpp
+  AudiEngine.cpp
+  AudiBody.cpp
+  AbstractFactoryPattern.cpp
+  正在生成代码...
+Link:
+  D:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Design-pattern\c++\Debug\AbstractFactoryPattern.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Design-pattern\c++\Debug\AbstractFactoryPattern.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Design-pattern\c++\Debug\AbstractFactoryPattern.lib" /MACHINE:X86 Debug\AbstractFactoryPattern.obj
+  Debug\AudiBody.obj
+  Debug\AudiEngine.obj
+  Debug\AudiFactory.obj
+  Debug\AudiWheel.obj
+  Debug\BenzBody.obj
+  Debug\BenzEngine.obj
+  Debug\BenzFactory.obj
+  Debug\BenzWheel.obj
+  Debug\stdafx.obj
+  AbstractFactoryPattern.vcxproj -> D:\Design-pattern\c++\Debug\AbstractFactoryPattern.exe
+已完成生成项目“D:\Design-pattern\c++\AbstractFactoryPattern\AbstractFactoryPattern.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:06.11

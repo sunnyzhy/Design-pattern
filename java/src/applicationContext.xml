@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="simpleFactoryPattern" class="com.zhy.DesignPattern.SimpleFactory.CarFactory">
+		<property name="name" value="audi"></property>
+	</bean>
+	<bean id="factoryMethodPattern" class="com.zhy.DesignPattern.FactoryMethod.AudiFactory"></bean>
+	<bean id="abstractFactoryPattern" class="com.zhy.DesignPattern.AbstractFactory.AudiFactory"></bean>
+	<bean id="builderPattern" class="com.zhy.DesignPattern.Builder.BuilderAudi"></bean>
+	<bean id="prototypePattern" class="com.zhy.DesignPattern.Prototype.ShallowStudent">
+		<property name="name" value="Jim"></property>
+		<property name="age" value="20"></property>
+		<property name="course" ref="course"></property>
+	</bean>
+	<bean id="course" class="com.zhy.DesignPattern.Prototype.Course">
+		<property name="name" value="C++"></property>
+	</bean>
+</beans>
