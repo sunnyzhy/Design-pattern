@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrototypePattern", "Prototy
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SingletonPattern", "SingletonPattern\SingletonPattern.vcxproj", "{FF33FB44-517A-4CDD-8B5C-6FBC55241F13}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdapterPattern", "AdapterPattern\AdapterPattern.vcxproj", "{A96247A0-EF15-4FFB-A2CF-A77E4A626A57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,16 @@ Global
 		{FF33FB44-517A-4CDD-8B5C-6FBC55241F13}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{FF33FB44-517A-4CDD-8B5C-6FBC55241F13}.Release|Win32.ActiveCfg = Release|Win32
 		{FF33FB44-517A-4CDD-8B5C-6FBC55241F13}.Release|Win32.Build.0 = Release|Win32
+		{A96247A0-EF15-4FFB-A2CF-A77E4A626A57}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{A96247A0-EF15-4FFB-A2CF-A77E4A626A57}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{A96247A0-EF15-4FFB-A2CF-A77E4A626A57}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{A96247A0-EF15-4FFB-A2CF-A77E4A626A57}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A96247A0-EF15-4FFB-A2CF-A77E4A626A57}.Debug|Win32.Build.0 = Debug|Win32
+		{A96247A0-EF15-4FFB-A2CF-A77E4A626A57}.Release|Any CPU.ActiveCfg = Release|Win32
+		{A96247A0-EF15-4FFB-A2CF-A77E4A626A57}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{A96247A0-EF15-4FFB-A2CF-A77E4A626A57}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{A96247A0-EF15-4FFB-A2CF-A77E4A626A57}.Release|Win32.ActiveCfg = Release|Win32
+		{A96247A0-EF15-4FFB-A2CF-A77E4A626A57}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

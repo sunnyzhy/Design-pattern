@@ -1,4 +1,5 @@
 ﻿
+using AdapterPattern;
 //using PrototypePattern;
 //using SingletonPattern;
 //using BuilderPattern;
@@ -78,6 +79,15 @@ namespace csharp
             #region 单例模式（Singleton）
             //Singleton instance = Singleton.GetInstance();
             //instance.Print();
+            #endregion
+
+            #region 适配器模式（Adapter）
+            ICalculation calculation = new Calculation();
+            Console.WriteLine(calculation.Add(1.1, 2.2));
+
+            string value = ConfigurationManager.AppSettings["adapterPattern"];
+            calculation = (ICalculation)Assembly.Load(value.Substring(0, value.IndexOf('.'))).CreateInstance(value, true, BindingFlags.Default, null, new object[1] { new CalculationAdaptee() }, null, null);
+            Console.WriteLine(calculation.Add(1.1, 2.2));
             #endregion
 
             Console.Read();

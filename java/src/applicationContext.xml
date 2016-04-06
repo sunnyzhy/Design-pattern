@@ -17,4 +17,8 @@
 	<bean id="course" class="com.zhy.DesignPattern.Prototype.Course">
 		<property name="name" value="C++"></property>
 	</bean>
+	<bean id="adapterPattern" class="com.zhy.DesignPattern.Adapter.CalculationObjectAdapter">
+		<constructor-arg ref="calculationAdaptee"></constructor-arg>
+	</bean>
+	<bean id="calculationAdaptee" class="com.zhy.DesignPattern.Adapter.CalculationAdaptee"></bean>
 </beans>
