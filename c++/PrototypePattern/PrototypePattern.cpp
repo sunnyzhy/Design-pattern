@@ -27,11 +27,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout<<"student1:" << student1->name.c_str() << "\t" << student1->age << "\t" << student1->course->name.c_str() << endl;
 
 	delete student1->course;
-	student1->course = NULL;
 	delete student1;
-	student1 = NULL;
 	delete student;
-	student = NULL;
 
 	system("pause");
 	return 0;

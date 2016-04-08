@@ -11,7 +11,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	instance->Print();
 
 	delete instance;
-	instance = NULL;
 
 	system("pause");
 	return 0;

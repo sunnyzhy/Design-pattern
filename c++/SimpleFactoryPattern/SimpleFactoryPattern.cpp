@@ -13,9 +13,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	car->Print();
 
 	delete car;
-	car = NULL;
 	delete factory;
-	factory = NULL;
+
 	system("pause");
 	return 0;
 }

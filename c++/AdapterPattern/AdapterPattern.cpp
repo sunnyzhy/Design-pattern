@@ -15,13 +15,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout<<calculation->Add(1.1,2.2)<<endl;
 
 	delete calculation;
-	calculation = NULL;
 
 	calculation = new CalculationObjectAdapter(new CalculationAdaptee());
 	cout<<calculation->Add(1.1,2.2)<<endl;
 
 	delete calculation;
-	calculation = NULL;
 
 	system("pause");
 	return 0;

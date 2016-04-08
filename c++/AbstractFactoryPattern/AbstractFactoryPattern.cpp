@@ -19,13 +19,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	wheel->InstallRightBackWheel();
 
 	delete wheel;
-	wheel = NULL;
 	delete engine;
-	engine = NULL;
 	delete body;
-	body = NULL;
 	delete factory;
-	factory = NULL;
+
 	system("pause");
 	return 0;
 }

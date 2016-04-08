@@ -1,5 +1,6 @@
 ﻿
-using AdapterPattern;
+using BridgePattern;
+//using AdapterPattern;
 //using PrototypePattern;
 //using SingletonPattern;
 //using BuilderPattern;
@@ -82,12 +83,20 @@ namespace csharp
             #endregion
 
             #region 适配器模式（Adapter）
-            ICalculation calculation = new Calculation();
-            Console.WriteLine(calculation.Add(1.1, 2.2));
+            //ICalculation calculation = new Calculation();
+            //Console.WriteLine(calculation.Add(1.1, 2.2));
 
-            string value = ConfigurationManager.AppSettings["adapterPattern"];
-            calculation = (ICalculation)Assembly.Load(value.Substring(0, value.IndexOf('.'))).CreateInstance(value, true, BindingFlags.Default, null, new object[1] { new CalculationAdaptee() }, null, null);
-            Console.WriteLine(calculation.Add(1.1, 2.2));
+            //string value = ConfigurationManager.AppSettings["adapterPattern"];
+            //calculation = (ICalculation)Assembly.Load(value.Substring(0, value.IndexOf('.'))).CreateInstance(value, true, BindingFlags.Default, null, new object[1] { new CalculationAdaptee() }, null, null);
+            //Console.WriteLine(calculation.Add(1.1, 2.2));
+            #endregion
+
+            #region 桥接模式（Bridge）
+            string value = ConfigurationManager.AppSettings["bridgePatternApp"];
+            MobilePhoneApp app = (MobilePhoneApp)Assembly.Load(value.Substring(0, value.IndexOf('.'))).CreateInstance(value);
+            value = ConfigurationManager.AppSettings["bridgePatternPhone"];
+            MobilePhone phone = (MobilePhone)Assembly.Load(value.Substring(0, value.IndexOf('.'))).CreateInstance(value, true, BindingFlags.Default, null, new object[1] { app }, null, null);
+            phone.Run();
             #endregion
 
             Console.Read();

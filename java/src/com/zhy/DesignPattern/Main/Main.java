@@ -3,9 +3,12 @@ package com.zhy.DesignPattern.Main;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.zhy.DesignPattern.Bridge.MobilePhone;
+import com.zhy.DesignPattern.Bridge.MobilePhoneApp;
 
-import com.zhy.DesignPattern.Adapter.Calculation;
-import com.zhy.DesignPattern.Adapter.ICalculation;
+
+//import com.zhy.DesignPattern.Adapter.Calculation;
+//import com.zhy.DesignPattern.Adapter.ICalculation;
 
 //import com.zhy.DesignPattern.Singleton.Singleton;
 //import com.zhy.DesignPattern.Prototype.AbstractStudent;
@@ -89,13 +92,19 @@ public class Main {
 //		instance.Print();
 		
 		//适配器模式（Adapter）
-		ICalculation calculation = new Calculation();
-		System.out.println(calculation.Add(1.1, 2.2));
+//		ICalculation calculation = new Calculation();
+//		System.out.println(calculation.Add(1.1, 2.2));
+//		
+//		ApplicationContext ctx= new ClassPathXmlApplicationContext("applicationContext.xml");
+//		calculation= (ICalculation)ctx.getBean("adapterPattern");
+//		((ClassPathXmlApplicationContext)ctx).close();
+//		System.out.println(calculation.Add(1.1, 2.2));
 		
+		//桥接模式（Bridge）
 		ApplicationContext ctx= new ClassPathXmlApplicationContext("applicationContext.xml");
-		calculation= (ICalculation)ctx.getBean("adapterPattern");
+		MobilePhone phone = (MobilePhone)ctx.getBean("bridgePattern");
 		((ClassPathXmlApplicationContext)ctx).close();
-		System.out.println(calculation.Add(1.1, 2.2));
+		phone.Run();
 	}
 
 }
