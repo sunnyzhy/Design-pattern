@@ -13,7 +13,7 @@
 	
 	<bean id="builderPattern" class="com.zhy.DesignPattern.Builder.BuilderAudi"></bean>
 	
-	<bean id="prototypePattern" class="com.zhy.DesignPattern.Prototype.ShallowStudent">
+	<bean id="prototypePattern" class="com.zhy.DesignPattern.Prototype.DeepSerialize.Student">
 		<property name="name" value="Jim"></property>
 		<property name="age" value="20"></property>
 		<property name="course" ref="course"></property>
@@ -22,10 +22,11 @@
 		<property name="name" value="C++"></property>
 	</bean>
 	
-	<bean id="adapterPattern" class="com.zhy.DesignPattern.Adapter.CalculationObjectAdapter">
-		<constructor-arg ref="calculationAdaptee"></constructor-arg>
+	<bean id="adapterPattern" class="com.zhy.DesignPattern.Adapter.Class.CalculationAdapter"></bean>
+	<!-- <bean id="adapterPattern" class="com.zhy.DesignPattern.Adapter.Object.CalculationAdapter">
+		<constructor-arg ref="adaptee"></constructor-arg>
 	</bean>
-	<bean id="calculationAdaptee" class="com.zhy.DesignPattern.Adapter.CalculationAdaptee"></bean>
+	<bean id="adaptee" class="com.zhy.DesignPattern.Adapter.CalculationAdaptee"></bean> -->
 	
 	<bean id="bridgePattern" class="com.zhy.DesignPattern.Bridge.MEIZU">
 		<constructor-arg ref="app"></constructor-arg>

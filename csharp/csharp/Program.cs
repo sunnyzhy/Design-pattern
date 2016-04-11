@@ -1,5 +1,6 @@
 ﻿
-using BridgePattern;
+//using CompositePattern.Transparent;
+//using BridgePattern;
 //using AdapterPattern;
 //using PrototypePattern;
 //using SingletonPattern;
@@ -87,16 +88,35 @@ namespace csharp
             //Console.WriteLine(calculation.Add(1.1, 2.2));
 
             //string value = ConfigurationManager.AppSettings["adapterPattern"];
-            //calculation = (ICalculation)Assembly.Load(value.Substring(0, value.IndexOf('.'))).CreateInstance(value, true, BindingFlags.Default, null, new object[1] { new CalculationAdaptee() }, null, null);
+            ////calculation = (ICalculation)Assembly.Load(value.Substring(0, value.IndexOf('.'))).CreateInstance(value, true, BindingFlags.Default, null, new object[1] { new CalculationAdaptee() }, null, null);
+            //calculation = (ICalculation)Assembly.Load(value.Substring(0, value.IndexOf('.'))).CreateInstance(value);
             //Console.WriteLine(calculation.Add(1.1, 2.2));
             #endregion
 
             #region 桥接模式（Bridge）
-            string value = ConfigurationManager.AppSettings["bridgePatternApp"];
-            MobilePhoneApp app = (MobilePhoneApp)Assembly.Load(value.Substring(0, value.IndexOf('.'))).CreateInstance(value);
-            value = ConfigurationManager.AppSettings["bridgePatternPhone"];
-            MobilePhone phone = (MobilePhone)Assembly.Load(value.Substring(0, value.IndexOf('.'))).CreateInstance(value, true, BindingFlags.Default, null, new object[1] { app }, null, null);
-            phone.Run();
+            //string value = ConfigurationManager.AppSettings["bridgePatternApp"];
+            //MobilePhoneApp app = (MobilePhoneApp)Assembly.Load(value.Substring(0, value.IndexOf('.'))).CreateInstance(value);
+            //value = ConfigurationManager.AppSettings["bridgePatternPhone"];
+            //MobilePhone phone = (MobilePhone)Assembly.Load(value.Substring(0, value.IndexOf('.'))).CreateInstance(value, true, BindingFlags.Default, null, new object[1] { app }, null, null);
+            //phone.Run();
+            #endregion
+
+            #region 组合模式（Composite）
+            //Composite root = new Composite("root", 0);
+            //Composite node1 = new Composite("node1", 1);
+            //node1.Add(new Leaf("leaf10", 2));
+            //node1.Add(new Leaf("leaf11", 2));
+            //root.Add(node1);
+
+            //Composite node2 = new Composite("node2", 1);
+            //node2.Add(new Leaf("leaf20", 2));
+            //Composite node3 = new Composite("node21", 2);
+            //node3.Add(new Leaf("leaf22", 3));
+            //node2.Add(node3);
+            //root.Add(node2);
+
+            //Console.WriteLine(root.Name);
+            //root.Display(root);
             #endregion
 
             Console.Read();

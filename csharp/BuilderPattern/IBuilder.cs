@@ -1,6 +1,9 @@
 ﻿
 namespace BuilderPattern
 {
+    /// <summary>
+    /// 建造者接口
+    /// </summary>
     public interface IBuilder
     {
         void BuildBody();

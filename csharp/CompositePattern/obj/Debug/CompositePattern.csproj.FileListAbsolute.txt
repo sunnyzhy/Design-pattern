@@ -1,0 +1,4 @@
+D:\Design-pattern\csharp\csharp\bin\Debug\CompositePattern.dll
+D:\Design-pattern\csharp\csharp\bin\Debug\CompositePattern.pdb
+D:\Design-pattern\csharp\CompositePattern\obj\Debug\CompositePattern.dll
+D:\Design-pattern\csharp\CompositePattern\obj\Debug\CompositePattern.pdb

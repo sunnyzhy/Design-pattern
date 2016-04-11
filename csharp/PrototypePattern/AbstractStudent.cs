@@ -1,6 +1,8 @@
 ﻿
+using System;
 namespace PrototypePattern
 {
+    [Serializable]
     public abstract class AbstractStudent
     {
         public string Name { get; set; }

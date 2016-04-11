@@ -3,8 +3,10 @@ package com.zhy.DesignPattern.Main;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.zhy.DesignPattern.Bridge.MobilePhone;
-import com.zhy.DesignPattern.Bridge.MobilePhoneApp;
+//import com.zhy.DesignPattern.Bridge.MobilePhone;
+//import com.zhy.DesignPattern.Bridge.MobilePhoneApp;
+//import com.zhy.DesignPattern.Composite.Transparent.Composite;
+//import com.zhy.DesignPattern.Composite.Transparent.Leaf;
 
 
 //import com.zhy.DesignPattern.Adapter.Calculation;
@@ -12,7 +14,6 @@ import com.zhy.DesignPattern.Bridge.MobilePhoneApp;
 
 //import com.zhy.DesignPattern.Singleton.Singleton;
 //import com.zhy.DesignPattern.Prototype.AbstractStudent;
-//import com.zhy.DesignPattern.Prototype.DeepStudentSerialize;
 //import com.zhy.DesignPattern.Builder.Car;
 //import com.zhy.DesignPattern.Builder.Director;
 //import com.zhy.DesignPattern.Builder.IBuilder;
@@ -30,7 +31,7 @@ import com.zhy.DesignPattern.Bridge.MobilePhoneApp;
 
 public class Main {
 
-	public static void main(String[] args) throws CloneNotSupportedException {
+	public static void main(String[] args) {
 
 		//简单工厂(SimpleFactoryPattern)
 //		ApplicationContext ctx= new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -101,10 +102,27 @@ public class Main {
 //		System.out.println(calculation.Add(1.1, 2.2));
 		
 		//桥接模式（Bridge）
-		ApplicationContext ctx= new ClassPathXmlApplicationContext("applicationContext.xml");
-		MobilePhone phone = (MobilePhone)ctx.getBean("bridgePattern");
-		((ClassPathXmlApplicationContext)ctx).close();
-		phone.Run();
+//		ApplicationContext ctx= new ClassPathXmlApplicationContext("applicationContext.xml");
+//		MobilePhone phone = (MobilePhone)ctx.getBean("bridgePattern");
+//		((ClassPathXmlApplicationContext)ctx).close();
+//		phone.Run();
+		
+		//组合模式（Composite）
+//		Composite root = new Composite("root", 0);
+//        Composite node1 = new Composite("node1", 1);
+//        node1.Add(new Leaf("leaf10", 2));
+//        node1.Add(new Leaf("leaf11", 2));
+//        root.Add(node1);
+//
+//        Composite node2 = new Composite("node2", 1);
+//        node2.Add(new Leaf("leaf20", 2));
+//        Composite node3 = new Composite("node21", 2);
+//        node3.Add(new Leaf("leaf22", 3));
+//        node2.Add(node3);
+//        root.Add(node2);
+//
+//        System.out.println(root.getName());
+//        root.Display(root);
 	}
 
 }

@@ -2,6 +2,9 @@
 using System;
 namespace BuilderPattern
 {
+    /// <summary>
+    /// 奥迪建造者
+    /// </summary>
     public class BuilderAudi : IBuilder
     {
         private Car car = new Car();

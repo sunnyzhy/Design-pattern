@@ -1,6 +1,9 @@
 ﻿
 namespace BuilderPattern
 {
+    /// <summary>
+    /// 指挥者
+    /// </summary>
     public class Director
     {
         public void Constrcut(IBuilder builder)

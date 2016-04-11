@@ -39,10 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SafeDoubleLockSingleton.cs" />
-    <Compile Include="SafeLockSingleton.cs" />
+    <Compile Include="DoubleLock\Singleton.cs" />
+    <Compile Include="Lock\Singleton.cs" />
     <Compile Include="Singleton.cs" />
-    <Compile Include="UnsafeSingleton.cs" />
+    <Compile Include="Unsafe\Singleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
