@@ -9,10 +9,10 @@ public class Student extends AbstractStudent {
 	public AbstractStudent Clone() {
 		
 		Student student = new Student();
-		student.setName(super.name);
-		student.setAge(super.age);
+		student.setName(super.getName());
+		student.setAge(super.getAge());
 		student.setCourse(new Course());
-		student.course.setName(super.course.getName());
+		student.getCourse().setName(super.getCourse().getName());
 		return student;
 	}
 }

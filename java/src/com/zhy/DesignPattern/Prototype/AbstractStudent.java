@@ -1,8 +1,12 @@
 package com.zhy.DesignPattern.Prototype;
 
-public abstract class AbstractStudent {
+import java.io.Serializable;
 
-    public String name;
+public abstract class AbstractStudent implements Serializable {
+	
+	private static final long serialVersionUID = 3L; 
+	
+    private String name;
     public String getName() {
 		return name;
 	}
@@ -11,7 +15,7 @@ public abstract class AbstractStudent {
 		this.name = name;
 	}
 
-	public int age;
+	private int age;
 	public int getAge() {
 		return age;
 	}
@@ -20,7 +24,7 @@ public abstract class AbstractStudent {
 		this.age = age;
 	}
 
-    public Course course;
+	private Course course;
 	public Course getCourse() {
 		return course;
 	}

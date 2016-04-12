@@ -5,15 +5,17 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 //import com.zhy.DesignPattern.Bridge.MobilePhone;
 //import com.zhy.DesignPattern.Bridge.MobilePhoneApp;
+
 //import com.zhy.DesignPattern.Composite.Transparent.Composite;
 //import com.zhy.DesignPattern.Composite.Transparent.Leaf;
-
 
 //import com.zhy.DesignPattern.Adapter.Calculation;
 //import com.zhy.DesignPattern.Adapter.ICalculation;
 
 //import com.zhy.DesignPattern.Singleton.Singleton;
+
 //import com.zhy.DesignPattern.Prototype.AbstractStudent;
+
 //import com.zhy.DesignPattern.Builder.Car;
 //import com.zhy.DesignPattern.Builder.Director;
 //import com.zhy.DesignPattern.Builder.IBuilder;
@@ -73,20 +75,20 @@ public class Main {
 //		ApplicationContext ctx= new ClassPathXmlApplicationContext("applicationContext.xml");
 //		AbstractStudent student= (AbstractStudent)ctx.getBean("prototypePattern");
 //		((ClassPathXmlApplicationContext)ctx).close();
-//        System.out.println("student : " + student.name + "\t" + student.age + "\t" + student.course.getName());
+//        System.out.println("student : " + student.getName() + "\t" + student.getAge() + "\t" + student.getCourse().getName());
 //
 //        System.out.println();
 //        AbstractStudent student1 = (AbstractStudent)student.Clone();
-//        student1.name = "Tom";
-//        student1.age = 21;
-//        student1.course.setName("C#");
-//        System.out.println("student : " + student.name + "\t" + student.age + "\t" + student.course.getName());
-//        System.out.println("student1: " + student1.name + "\t" + student1.age + "\t" + student1.course.getName());
+//        student1.setName("Tom");
+//        student1.setAge(21);
+//        student1.getCourse().setName("C#");
+//        System.out.println("student : " + student.getName() + "\t" + student.getAge() + "\t" + student.getCourse().getName());
+//        System.out.println("student1: " + student1.getName() + "\t" + student1.getAge() + "\t" + student1.getCourse().getName());
 //
 //        System.out.println();
-//        student1.course.setName("Java");
-//        System.out.println("student : " + student.name + "\t" + student.age + "\t" + student.course.getName());
-//        System.out.println("student1: " + student1.name + "\t" + student1.age + "\t" + student1.course.getName());
+//        student1.getCourse().setName("Java");
+//        System.out.println("student : " + student.getName() + "\t" + student.getAge() + "\t" + student.getCourse().getName());
+//        System.out.println("student1: " + student1.getName() + "\t" + student1.getAge() + "\t" + student1.getCourse().getName());
 		
 		//µ¥ÀýÄ£Ê½£¨Singleton£©
 //		Singleton instance = Singleton.GetInstance();
