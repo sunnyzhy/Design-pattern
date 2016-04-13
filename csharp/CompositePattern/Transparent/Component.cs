@@ -30,6 +30,7 @@ namespace CompositePattern.Transparent
             this.depth = depth;
         }
 
+        #region 管理成员对象的方法
         /// <summary>
         /// 添加子节点
         /// </summary>
@@ -48,6 +49,7 @@ namespace CompositePattern.Transparent
         /// <param name="i"></param>
         /// <returns></returns>
         public abstract Component GetChild(int i);
+        #endregion
 
         /// <summary>
         /// 子节点操作

@@ -53,7 +53,7 @@ public class Composite extends Component {
                }
                System.out.print(c.getName());
                System.out.println();
-               Display((Composite)c);
+               Display(c);
            }
 	}
 }

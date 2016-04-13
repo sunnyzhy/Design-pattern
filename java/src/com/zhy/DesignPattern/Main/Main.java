@@ -3,6 +3,11 @@ package com.zhy.DesignPattern.Main;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.zhy.DesignPattern.Decorator.Egg;
+import com.zhy.DesignPattern.Decorator.Food;
+import com.zhy.DesignPattern.Decorator.Noodles;
+import com.zhy.DesignPattern.Decorator.Tomato;
+
 //import com.zhy.DesignPattern.Bridge.MobilePhone;
 //import com.zhy.DesignPattern.Bridge.MobilePhoneApp;
 
@@ -125,6 +130,12 @@ public class Main {
 //
 //        System.out.println(root.getName());
 //        root.Display(root);
+		
+		//×°ÊÎÄ£Ê½£¨Decorator£©
+		Food noodles = new Noodles();
+        Egg egg = new Egg(noodles);
+        Tomato tomato = new Tomato(egg);
+        tomato.Cook();
 	}
 
 }

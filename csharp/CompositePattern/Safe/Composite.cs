@@ -19,6 +19,7 @@ namespace CompositePattern.Safe
 
         }
 
+        #region 管理成员对象的方法
         /// <summary>
         /// 添加子节点
         /// </summary>
@@ -53,18 +54,21 @@ namespace CompositePattern.Safe
                 return null;
             }
         }
+        #endregion
 
         public override void Display(Component component)
         {
             foreach (Component c in ((Composite)component).children)
             {
-                if (c is Leaf)
+                if (c is Composite)
+                {
+                    Console.WriteLine(c.Name.PadLeft(c.Depth + c.Name.Length, '-'));
+                    Display(c);
+                }
+                else
                 {
                     c.Display(c);
-                    continue;
                 }
-                Console.WriteLine(c.Name.PadLeft(c.Depth + c.Name.Length, '-'));
-                Display((Composite)c);
             }
         }
     }
