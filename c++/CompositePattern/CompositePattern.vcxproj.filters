@@ -36,6 +36,15 @@
     <ClInclude Include="Type.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SafeComponent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeComposite.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeLeaf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -51,6 +60,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="TransparentLeaf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SafeComponent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SafeComposite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SafeLeaf.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

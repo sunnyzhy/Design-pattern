@@ -26,7 +26,6 @@ void TransparentComposite::Remove(TransparentComponent *component)
 			break;
 		}
 	}
-	this->children.pop_back();
 }
 
 TransparentComponent *TransparentComposite::GetChild(int i)

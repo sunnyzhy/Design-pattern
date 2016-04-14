@@ -1,6 +1,6 @@
 ﻿
-//using DecoratorPattern;
-using CompositePattern.Transparent;
+using DecoratorPattern;
+//using CompositePattern.Transparent;
 //using BridgePattern;
 //using AdapterPattern;
 //using PrototypePattern;
@@ -103,28 +103,34 @@ namespace csharp
             #endregion
 
             #region 组合模式（Composite）
-            Composite root = new Composite("root", 0);
-            Composite node1 = new Composite("node1", 1);
-            node1.Add(new Leaf("leaf10", 2));
-            node1.Add(new Leaf("leaf11", 2));
-            root.Add(node1);
+            //Composite root = new Composite("root", 0);
+            //Composite node1 = new Composite("node1", 1);
+            //node1.Add(new Leaf("leaf10", 2));
+            //node1.Add(new Leaf("leaf11", 2));
+            //root.Add(node1);
 
-            Composite node2 = new Composite("node2", 1);
-            node2.Add(new Leaf("leaf20", 2));
-            Composite node3 = new Composite("node21", 2);
-            node3.Add(new Leaf("leaf22", 3));
-            node2.Add(node3);
-            root.Add(node2);
+            //Composite node2 = new Composite("node2", 1);
+            //node2.Add(new Leaf("leaf20", 2));
+            //Composite node3 = new Composite("node21", 2);
+            //node3.Add(new Leaf("leaf22", 3));
+            //node2.Add(node3);
+            //root.Add(node2);
 
-            Console.WriteLine(root.Name);
-            root.Display(root);
+            //Console.WriteLine(root.Name);
+            //root.Display(root);
+
+            //Console.WriteLine("==========");
+
+            //root.Remove(node2);
+            //Console.WriteLine(root.Name);
+            //root.Display(root);
             #endregion
 
             #region 装饰模式（Decorator）
-            //Food noodles = new Noodles();
-            //Egg egg = new Egg(noodles);
-            //Tomato tomato = new Tomato(egg);
-            //tomato.Cook();
+            Food noodles = new Noodles();
+            Egg egg = new Egg(noodles);
+            Tomato tomato = new Tomato(egg);
+            tomato.Cook();
             #endregion 
 
             Console.Read();

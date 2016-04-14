@@ -130,6 +130,12 @@ public class Main {
 //
 //        System.out.println(root.getName());
 //        root.Display(root);
+//        
+//        System.out.println("==========");
+//        
+//        root.Remove(node2);
+//        System.out.println(root.getName());
+//        root.Display(root);
 		
 		//×°ÊÎÄ£Ê½£¨Decorator£©
 		Food noodles = new Noodles();

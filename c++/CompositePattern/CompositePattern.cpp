@@ -27,6 +27,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout<<root->name<<endl;
 	root->Display(root);
 
+	cout<<"=========="<<endl;
+
+	root->Remove(node2);
+	cout<<root->name<<endl;
+	root->Display(root);
+
 	delete leaf22;
 	delete node3;
 	delete leaf20;
@@ -35,7 +41,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	delete leaf10;
 	delete node1;
 	delete root;
-
+	
 	system("pause");
 	return 0;
 }
