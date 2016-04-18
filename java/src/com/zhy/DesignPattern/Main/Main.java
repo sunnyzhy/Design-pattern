@@ -3,10 +3,12 @@ package com.zhy.DesignPattern.Main;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.zhy.DesignPattern.Decorator.Egg;
-import com.zhy.DesignPattern.Decorator.Food;
-import com.zhy.DesignPattern.Decorator.Noodles;
-import com.zhy.DesignPattern.Decorator.Tomato;
+import com.zhy.DesignPattern.Facade.Facade;
+
+//import com.zhy.DesignPattern.Decorator.Egg;
+//import com.zhy.DesignPattern.Decorator.Food;
+//import com.zhy.DesignPattern.Decorator.Noodles;
+//import com.zhy.DesignPattern.Decorator.Tomato;
 
 //import com.zhy.DesignPattern.Bridge.MobilePhone;
 //import com.zhy.DesignPattern.Bridge.MobilePhoneApp;
@@ -138,10 +140,14 @@ public class Main {
 //        root.Display(root);
 		
 		//装饰模式（Decorator）
-		Food noodles = new Noodles();
-        Egg egg = new Egg(noodles);
-        Tomato tomato = new Tomato(egg);
-        tomato.Cook();
+//		Food noodles = new Noodles();
+//        Egg egg = new Egg(noodles);
+//        Tomato tomato = new Tomato(egg);
+//        tomato.Cook();
+		
+		//外观模式（Facade）
+		Facade facade = new Facade();
+        facade.Cook();
 	}
 
 }

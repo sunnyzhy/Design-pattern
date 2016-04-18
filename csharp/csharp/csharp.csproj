@@ -52,6 +52,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\DecoratorPattern.dll</HintPath>
     </Reference>
+    <Reference Include="FacadePattern, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FacadePattern.dll</HintPath>
+    </Reference>
     <Reference Include="PrototypePattern, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\PrototypePattern.dll</HintPath>

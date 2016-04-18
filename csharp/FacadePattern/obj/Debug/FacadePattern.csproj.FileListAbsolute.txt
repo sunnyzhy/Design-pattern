@@ -1,0 +1,4 @@
+D:\Design-pattern\csharp\csharp\bin\Debug\FacadePattern.dll
+D:\Design-pattern\csharp\csharp\bin\Debug\FacadePattern.pdb
+D:\Design-pattern\csharp\FacadePattern\obj\Debug\FacadePattern.dll
+D:\Design-pattern\csharp\FacadePattern\obj\Debug\FacadePattern.pdb

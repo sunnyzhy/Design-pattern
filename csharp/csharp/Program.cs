@@ -1,5 +1,6 @@
 ﻿
-using DecoratorPattern;
+using FacadePattern;
+//using DecoratorPattern;
 //using CompositePattern.Transparent;
 //using BridgePattern;
 //using AdapterPattern;
@@ -127,10 +128,15 @@ namespace csharp
             #endregion
 
             #region 装饰模式（Decorator）
-            Food noodles = new Noodles();
-            Egg egg = new Egg(noodles);
-            Tomato tomato = new Tomato(egg);
-            tomato.Cook();
+            //Food noodles = new Noodles();
+            //Egg egg = new Egg(noodles);
+            //Tomato tomato = new Tomato(egg);
+            //tomato.Cook();
+            #endregion 
+
+            #region 外观模式（Facade）
+            Facade facade = new Facade();
+            facade.Cook();
             #endregion 
 
             Console.Read();
