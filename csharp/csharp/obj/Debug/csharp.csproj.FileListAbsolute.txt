@@ -4,7 +4,7 @@ D:\Design-pattern\csharp\csharp\bin\Debug\csharp.pdb
 D:\Design-pattern\csharp\csharp\obj\Debug\csharp.csprojResolveAssemblyReference.cache
 D:\Design-pattern\csharp\csharp\obj\Debug\csharp.exe
 D:\Design-pattern\csharp\csharp\obj\Debug\csharp.pdb
+D:\Design-pattern\csharp\csharp\bin\Debug\FlyweightPattern.pdb
 D:\Design-pattern\csharp\csharp\bin\Debug\AbstractFactoryPattern.pdb
 D:\Design-pattern\csharp\csharp\bin\Debug\FactoryMethodPattern.pdb
 D:\Design-pattern\csharp\csharp\bin\Debug\SimpleFactoryPattern.pdb
-D:\Design-pattern\csharp\csharp\bin\Debug\FacadePattern.pdb
