@@ -3,8 +3,13 @@ package com.zhy.DesignPattern.Main;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.zhy.DesignPattern.Proxy.Google;
-import com.zhy.DesignPattern.Proxy.Proxy;
+import com.zhy.DesignPattern.Responsibility.Boss;
+import com.zhy.DesignPattern.Responsibility.Majordomo;
+import com.zhy.DesignPattern.Responsibility.Manager;
+import com.zhy.DesignPattern.Responsibility.Request;
+
+//import com.zhy.DesignPattern.Proxy.Google;
+//import com.zhy.DesignPattern.Proxy.Proxy;
 
 //import com.zhy.DesignPattern.Flyweight.Course;
 //import com.zhy.DesignPattern.Flyweight.CourseFactory;
@@ -173,10 +178,33 @@ public class Main {
 //        factory.GetCourseCount();
 		
 		//代理模式（Proxy）
-		Google google = new Google();
-        Proxy proxy = new Proxy(google);
-        proxy.Request("www.google.com");
-        System.out.println(proxy.Response());
+//		Google google = new Google();
+//        Proxy proxy = new Proxy(google);
+//        proxy.Request("www.google.com");
+//        System.out.println(proxy.Response());
+		
+		//职责链模式（Chain of Responsibility）
+        Manager manager = new Manager("Manager");
+        Majordomo majordomo = new Majordomo("Majordomo");
+        Boss boss = new Boss("Boss");
+
+        manager.SetSuperior(majordomo);
+        majordomo.SetSuperior(boss);
+
+        Request request1 = new Request();
+        request1.setName("Jim");
+        request1.setDays(1.5);
+        manager.HandeRequest(request1);
+
+        Request request2 = new Request();
+        request2.setName("Tom");
+        request2.setDays(2);
+        manager.HandeRequest(request2);
+
+        Request request3 = new Request();
+        request3.setName("Sam");
+        request3.setDays(5);
+        manager.HandeRequest(request3);
 	}
 
 }

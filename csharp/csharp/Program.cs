@@ -1,5 +1,6 @@
 ﻿
-using ProxyPattern;
+using ResponsibilityPattern;
+//using ProxyPattern;
 //using FlyweightPattern;
 //using FacadePattern;
 //using DecoratorPattern;
@@ -159,10 +160,35 @@ namespace csharp
             #endregion 
 
             #region 代理模式（Proxy）
-            Google google = new Google();
-            Proxy proxy = new Proxy(google);
-            proxy.Request("www.google.com");
-            Console.WriteLine(proxy.Response());
+            //Google google = new Google();
+            //Proxy proxy = new Proxy(google);
+            //proxy.Request("www.google.com");
+            //Console.WriteLine(proxy.Response());
+            #endregion 
+
+            #region 职责链模式（Chain of Responsibility）
+            Manager manager = new Manager("Manager");
+            Majordomo majordomo = new Majordomo("Majordomo");
+            Boss boss = new Boss("Boss");
+
+            manager.SetSuperior(majordomo);
+            majordomo.SetSuperior(boss);
+
+            Request request1 = new Request();
+            request1.Name = "Jim";
+            request1.Days = 1.5;
+            manager.HandeRequest(request1);
+
+            Request request2 = new Request();
+            request2.Name = "Tom";
+            request2.Days = 2;
+            manager.HandeRequest(request2);
+
+            Request request3 = new Request();
+            request3.Name = "Sam";
+            request3.Days = 5;
+            manager.HandeRequest(request3);
+
             #endregion 
             Console.Read();
         }

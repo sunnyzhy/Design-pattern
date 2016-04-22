@@ -1,0 +1,4 @@
+D:\Design-pattern\csharp\csharp\bin\Debug\ResponsibilityPattern.dll
+D:\Design-pattern\csharp\csharp\bin\Debug\ResponsibilityPattern.pdb
+D:\Design-pattern\csharp\ResponsibilityPattern\obj\Debug\ResponsibilityPattern.dll
+D:\Design-pattern\csharp\ResponsibilityPattern\obj\Debug\ResponsibilityPattern.pdb

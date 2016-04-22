@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlyweightPattern", "Flyweig
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProxyPattern", "ProxyPattern\ProxyPattern.vcxproj", "{0765E3DF-3B6F-4A5B-AC5D-EDB1E4D64997}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ResponsibilityPattern", "ResponsibilityPattern\ResponsibilityPattern.vcxproj", "{D81A082D-B2FF-43D7-9481-360AA714442E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -167,6 +169,16 @@ Global
 		{0765E3DF-3B6F-4A5B-AC5D-EDB1E4D64997}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{0765E3DF-3B6F-4A5B-AC5D-EDB1E4D64997}.Release|Win32.ActiveCfg = Release|Win32
 		{0765E3DF-3B6F-4A5B-AC5D-EDB1E4D64997}.Release|Win32.Build.0 = Release|Win32
+		{D81A082D-B2FF-43D7-9481-360AA714442E}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{D81A082D-B2FF-43D7-9481-360AA714442E}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{D81A082D-B2FF-43D7-9481-360AA714442E}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{D81A082D-B2FF-43D7-9481-360AA714442E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D81A082D-B2FF-43D7-9481-360AA714442E}.Debug|Win32.Build.0 = Debug|Win32
+		{D81A082D-B2FF-43D7-9481-360AA714442E}.Release|Any CPU.ActiveCfg = Release|Win32
+		{D81A082D-B2FF-43D7-9481-360AA714442E}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{D81A082D-B2FF-43D7-9481-360AA714442E}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{D81A082D-B2FF-43D7-9481-360AA714442E}.Release|Win32.ActiveCfg = Release|Win32
+		{D81A082D-B2FF-43D7-9481-360AA714442E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
