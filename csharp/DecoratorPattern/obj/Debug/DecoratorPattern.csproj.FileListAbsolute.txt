@@ -1,4 +1,0 @@
-D:\Design-pattern\csharp\csharp\bin\Debug\DecoratorPattern.dll
-D:\Design-pattern\csharp\csharp\bin\Debug\DecoratorPattern.pdb
-D:\Design-pattern\csharp\DecoratorPattern\obj\Debug\DecoratorPattern.dll
-D:\Design-pattern\csharp\DecoratorPattern\obj\Debug\DecoratorPattern.pdb

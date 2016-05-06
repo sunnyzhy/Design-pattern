@@ -1,4 +1,0 @@
-D:\Design-pattern\csharp\csharp\bin\Debug\AbstractFactoryPattern.dll
-D:\Design-pattern\csharp\csharp\bin\Debug\AbstractFactoryPattern.pdb
-D:\Design-pattern\csharp\AbstractFactoryPattern\obj\Debug\AbstractFactoryPattern.dll
-D:\Design-pattern\csharp\AbstractFactoryPattern\obj\Debug\AbstractFactoryPattern.pdb

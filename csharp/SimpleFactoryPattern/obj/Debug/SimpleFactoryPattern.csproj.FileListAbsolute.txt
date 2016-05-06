@@ -1,5 +1,0 @@
-D:\Design-pattern\csharp\csharp\bin\Debug\SimpleFactoryPattern.dll
-D:\Design-pattern\csharp\csharp\bin\Debug\SimpleFactoryPattern.pdb
-D:\Design-pattern\csharp\SimpleFactoryPattern\obj\Debug\SimpleFactoryPattern.dll
-D:\Design-pattern\csharp\SimpleFactoryPattern\obj\Debug\SimpleFactoryPattern.pdb
-D:\Design-pattern\csharp\SimpleFactoryPattern\obj\Debug\SimpleFactoryPattern.csprojResolveAssemblyReference.cache

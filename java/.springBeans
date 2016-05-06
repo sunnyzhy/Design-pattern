@@ -7,7 +7,13 @@
 	</configSuffixes>
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
-		<config>src/applicationContext.xml</config>
+		<config>src/com/zhy/DesignPattern/AbstractFactory/applicationContext.xml</config>
+		<config>src/com/zhy/DesignPattern/Adapter/applicationContext.xml</config>
+		<config>src/com/zhy/DesignPattern/Bridge/applicationContext.xml</config>
+		<config>src/com/zhy/DesignPattern/Builder/applicationContext.xml</config>
+		<config>src/com/zhy/DesignPattern/FactoryMethod/applicationContext.xml</config>
+		<config>src/com/zhy/DesignPattern/Prototype/applicationContext.xml</config>
+		<config>src/com/zhy/DesignPattern/SimpleFactory/applicationContext.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

@@ -1,4 +1,0 @@
-D:\Design-pattern\csharp\csharp\bin\Debug\AdapterPattern.dll
-D:\Design-pattern\csharp\csharp\bin\Debug\AdapterPattern.pdb
-D:\Design-pattern\csharp\AdapterPattern\obj\Debug\AdapterPattern.dll
-D:\Design-pattern\csharp\AdapterPattern\obj\Debug\AdapterPattern.pdb

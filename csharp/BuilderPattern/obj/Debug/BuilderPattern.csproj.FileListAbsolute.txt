@@ -1,4 +1,0 @@
-D:\Design-pattern\csharp\csharp\bin\Debug\BuilderPattern.dll
-D:\Design-pattern\csharp\csharp\bin\Debug\BuilderPattern.pdb
-D:\Design-pattern\csharp\BuilderPattern\obj\Debug\BuilderPattern.dll
-D:\Design-pattern\csharp\BuilderPattern\obj\Debug\BuilderPattern.pdb

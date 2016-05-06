@@ -1,4 +1,0 @@
-D:\Design-pattern\csharp\csharp\bin\Debug\FlyweightPattern.dll
-D:\Design-pattern\csharp\csharp\bin\Debug\FlyweightPattern.pdb
-D:\Design-pattern\csharp\FlyweightPattern\obj\Debug\FlyweightPattern.dll
-D:\Design-pattern\csharp\FlyweightPattern\obj\Debug\FlyweightPattern.pdb

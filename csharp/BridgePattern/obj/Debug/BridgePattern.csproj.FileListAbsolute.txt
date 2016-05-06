@@ -1,4 +1,0 @@
-D:\Design-pattern\csharp\csharp\bin\Debug\BridgePattern.dll
-D:\Design-pattern\csharp\csharp\bin\Debug\BridgePattern.pdb
-D:\Design-pattern\csharp\BridgePattern\obj\Debug\BridgePattern.dll
-D:\Design-pattern\csharp\BridgePattern\obj\Debug\BridgePattern.pdb

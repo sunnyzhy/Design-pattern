@@ -1,4 +1,0 @@
-D:\Design-pattern\csharp\csharp\bin\Debug\PrototypePattern.dll
-D:\Design-pattern\csharp\csharp\bin\Debug\PrototypePattern.pdb
-D:\Design-pattern\csharp\PrototypePattern\obj\Debug\PrototypePattern.dll
-D:\Design-pattern\csharp\PrototypePattern\obj\Debug\PrototypePattern.pdb
