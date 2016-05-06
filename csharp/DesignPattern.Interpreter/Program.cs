@@ -12,7 +12,7 @@ namespace DesignPattern.Interpreter
             string expression = Console.ReadLine();
             Calculator calculator = new Calculator(expression);
             double value = calculator.Calculate();
-            Console.WriteLine(value);
+            Console.WriteLine(expression + "=" + value);
 
             Console.Read();
         }

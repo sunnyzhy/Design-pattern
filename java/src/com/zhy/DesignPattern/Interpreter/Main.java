@@ -12,7 +12,7 @@ public class Main {
 		String expression = new BufferedReader(new InputStreamReader(System.in)).readLine();
         Calculator calculator = new Calculator(expression);
         double value = calculator.Calculate();
-        System.out.println(value);
+        System.out.println(expression + "=" + value);
 	}
 
 }
