@@ -1,0 +1,60 @@
+@startuml
+
+Factory <-- Keyboard
+Factory <-- Monitor
+Factory <-- Mouse
+
+interface Keyboard {
++void input()
+}
+
+class DellKeyboard implements Keyboard {
++void input()
+}
+
+class LenovoKeyboard implements Keyboard {
++void input()
+}
+
+interface Monitor {
++void display()
+}
+
+class DellMonitor implements Monitor {
++void display()
+}
+
+class LenovoMonitor implements Monitor {
++void display()
+}
+
+interface Mouse {
++void click()
+}
+
+class DellMouse implements Mouse {
++void click()
+}
+
+class LenovoMouse implements Mouse {
++void click()
+}
+
+interface Factory {
++Keyboard produceKeyboard()
++Monitor produceMonitor()
++Mouse produceMouse()
+}
+
+class DellFactory implements Factory {
++Keyboard produceKeyboard()
++Monitor produceMonitor()
++Mouse produceMouse()
+}
+
+class LenovoFactory implements Factory {
++Keyboard produceKeyboard()
++Monitor produceMonitor()
++Mouse produceMouse()
+}
+@enduml
