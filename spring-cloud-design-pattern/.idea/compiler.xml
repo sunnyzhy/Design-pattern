@@ -9,7 +9,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="simple-factory-pattern" />
         <module name="factory-pattern" />
+        <module name="facade-pattern" />
         <module name="abstract-factory-pattern" />
+        <module name="adapter-pattern" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +21,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="abstract-factory-pattern" options="-parameters" />
+      <module name="adapter-pattern" options="-parameters" />
+      <module name="facade-pattern" options="-parameters" />
       <module name="factory-pattern" options="-parameters" />
       <module name="simple-factory-pattern" options="-parameters" />
       <module name="spring-cloud-design-pattern" options="-parameters" />

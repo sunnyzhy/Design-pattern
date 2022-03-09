@@ -1,0 +1,45 @@
+@startuml
+
+Client1 <-- Facade
+Client2 <-- Facade
+Client3 <-- Facade
+
+Facade o-- SubSystemA
+Facade o-- SubSystemB
+Facade o-- SubSystemC
+
+class Client1 {
+-Facade facade;
++void method()
+}
+
+class Client2 {
+-Facade facade;
++void method()
+}
+
+class Client3 {
+-Facade facade;
++void method()
+}
+
+class Facade {
+-SubSystemA subSystemA
+-SubSystemB subSystemB
+-SubSystemC subSystemC
++void method()
+}
+
+class SubSystemA {
++void methodA()
+}
+
+class SubSystemB {
++void methodB()
+}
+
+class SubSystemC {
++void methodC()
+}
+
+@enduml

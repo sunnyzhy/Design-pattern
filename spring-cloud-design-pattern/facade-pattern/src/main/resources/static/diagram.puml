@@ -1,0 +1,48 @@
+@startuml
+
+Client1 <-- SubSystem1
+Client1 <-- SubSystem2
+Client1 <-- SubSystem3
+
+Client2 <-- SubSystem1
+Client2 <-- SubSystem2
+Client2 <-- SubSystem3
+
+Client3 <-- SubSystem1
+Client3 <-- SubSystem2
+Client3 <-- SubSystem3
+
+class Client1 {
+-SubSystem1 subSystem1
+-SubSystem2 subSystem2
+-SubSystem3 subSystem3
++void method()
+}
+
+class Client2 {
+-SubSystem1 subSystem1
+-SubSystem2 subSystem2
+-SubSystem3 subSystem3
++void method()
+}
+
+class Client3 {
+-SubSystem1 subSystem1
+-SubSystem2 subSystem2
+-SubSystem3 subSystem3
++void method()
+}
+
+class SubSystem1 {
++void method1()
+}
+
+class SubSystem2 {
++void method2()
+}
+
+class SubSystem3 {
++void method3()
+}
+
+@enduml

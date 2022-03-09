@@ -64,6 +64,32 @@
 
 ![实现（Realization）](./images/uml/Realization.png '实现（Realization）')
 
-### 综合应用
+### 3.7 综合应用
 
 ![综合应用](./images/uml/All.jpg '综合应用')
+
+### 3.8 PlantUML 类图
+
+```puml
+@startuml
+
+'关联
+ClassA <-- ClassB:关联
+
+'依赖
+ClassA <.. ClassB:依赖
+
+'聚合
+ClassA o-- ClassB:聚合
+
+'组合
+ClassA *-- ClassB:组合
+
+'泛化
+ClassA <|-- ClassB:泛化
+
+'实现
+ClassA <|.. ClassB:实现
+
+@enduml
+```

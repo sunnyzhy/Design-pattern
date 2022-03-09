@@ -1,6 +1,6 @@
 @startuml
 
-KeyboardFactory <-- Keyboard
+KeyboardFactory <.. Keyboard
 
 interface Keyboard {
 +void display()
