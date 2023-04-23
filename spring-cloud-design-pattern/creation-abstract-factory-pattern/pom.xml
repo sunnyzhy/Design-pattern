@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>simple-factory-pattern</artifactId>
+    <artifactId>creation-abstract-factory-pattern</artifactId>
 
     <properties>
         <maven.install.skip>true</maven.install.skip>

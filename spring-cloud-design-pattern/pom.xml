@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>simple-factory-pattern</module>
-        <module>factory-pattern</module>
-        <module>abstract-factory-pattern</module>
-        <module>facade-pattern</module>
-        <module>adapter-pattern</module>
+        <module>creation-simple-factory-pattern</module>
+        <module>creation-factory-method-pattern</module>
+        <module>creation-abstract-factory-pattern</module>
+        <module>structure-facade-pattern</module>
+        <module>structure-adapter-pattern</module>
     </modules>
 
     <parent>

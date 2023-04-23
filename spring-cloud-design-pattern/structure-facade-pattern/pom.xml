@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>facade-pattern</artifactId>
+    <artifactId>structure-facade-pattern</artifactId>
 
     <properties>
         <maven.install.skip>true</maven.install.skip>
