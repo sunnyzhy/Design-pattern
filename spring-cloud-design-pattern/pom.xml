@@ -10,6 +10,7 @@
         <module>creation-abstract-factory-pattern</module>
         <module>structure-facade-pattern</module>
         <module>structure-adapter-pattern</module>
+        <module>creation-singleton-pattern</module>
     </modules>
 
     <parent>
