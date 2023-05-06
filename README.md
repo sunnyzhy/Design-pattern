@@ -15,23 +15,23 @@
 
 创建型模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用 new 运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活。
 
-- [简单工厂模式（Simple Factory Pattern）](./spring-cloud-design-pattern/simple-factory-pattern '简单工厂模式（Simple Factory Pattern）')
-- [工厂方法模式（Factory Pattern）](./spring-cloud-design-pattern/factory-pattern '工厂方法模式（Factory Pattern）')
-- [抽象工厂模式（Abstract Factory Pattern）](./spring-cloud-design-pattern/simple-factory-pattern '抽象工厂模式（Abstract Factory Pattern）')
-- [单例模式（Singleton Pattern）](./spring-cloud-design-pattern/ '单例模式（Singleton Pattern）')
-- [建造者模式（Builder Pattern）](./spring-cloud-design-pattern/ '建造者模式（Builder Pattern）')
+- [简单工厂模式（Simple Factory Pattern）](./spring-cloud-design-pattern/creation-simple-factory-pattern '简单工厂模式（Simple Factory Pattern）')
+- [工厂方法模式（Factory Pattern）](./spring-cloud-design-pattern/creation-factory-method-pattern '工厂方法模式（Factory Pattern）')
+- [抽象工厂模式（Abstract Factory Pattern）](./spring-cloud-design-pattern/creation-abstract-factory-pattern '抽象工厂模式（Abstract Factory Pattern）')
+- [单例模式（Singleton Pattern）](./spring-cloud-design-pattern/creation-singleton-pattern '单例模式（Singleton Pattern）')
+- [建造者模式（Builder Pattern）](./spring-cloud-design-pattern/creation-builder-pattern '建造者模式（Builder Pattern）')
 - [原型模式（Prototype Pattern）](./spring-cloud-design-pattern/ '原型模式（Prototype Pattern）')
 
 ### 2 结构型模式（Structural Patterns）
 
 结构型模式关注类和对象的组合。继承的概念被用来组合接口和定义组合对象获得新功能的方式。
 
-- [适配器模式（Adapter Pattern）](./spring-cloud-design-pattern/ '适配器模式（Adapter Pattern）')
+- [适配器模式（Adapter Pattern）](./spring-cloud-design-pattern/structure-adapter-pattern '适配器模式（Adapter Pattern）')
 - [桥接模式（Bridge Pattern）](./spring-cloud-design-pattern/ '桥接模式（Bridge Pattern）')
-- [过滤器模式（Filter、Criteria Pattern）](./spring-cloud-design-pattern/ '过滤器模式（Filter、Criteria Pattern）')
+- [过滤器模式（Filter/Criteria Pattern）](./spring-cloud-design-pattern/ '过滤器模式（Filter/Criteria Pattern）')
 - [组合模式（Composite Pattern）](./spring-cloud-design-pattern/ '组合模式（Composite Pattern）')
 - [装饰器模式（Decorator Pattern）](./spring-cloud-design-pattern/ '装饰器模式（Decorator Pattern）')
-- [外观模式（Facade Pattern）](./spring-cloud-design-pattern/ '外观模式（Facade Pattern）')
+- [外观模式（Facade Pattern）](./spring-cloud-design-pattern/structure-facade-pattern '外观模式（Facade Pattern）')
 - [享元模式（Flyweight Pattern）](./spring-cloud-design-pattern/ '享元模式（Flyweight Pattern）')
 - [代理模式（Proxy Pattern）](./spring-cloud-design-pattern/ '代理模式（Proxy Pattern）')
 
