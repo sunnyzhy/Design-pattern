@@ -2,9 +2,6 @@ package org.springframework.cloud.pattern;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.pattern.factory.DellKeyboardFactory;
-import org.springframework.cloud.pattern.factory.KeyboardFactory;
-import org.springframework.cloud.pattern.product.Keyboard;
 
 /**
  * @author zhy
@@ -14,9 +11,5 @@ import org.springframework.cloud.pattern.product.Keyboard;
 public class FactoryPatternApplication {
     public static void main(String[] args) {
         SpringApplication.run(FactoryPatternApplication.class, args);
-
-        KeyboardFactory keyboardFactory = new DellKeyboardFactory();
-        Keyboard keyboard = keyboardFactory.produce();
-        keyboard.display();
     }
 }

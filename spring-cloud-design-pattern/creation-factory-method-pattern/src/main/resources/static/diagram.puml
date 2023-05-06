@@ -3,26 +3,26 @@
 KeyboardFactory <.. Keyboard
 
 interface Keyboard {
-+void display()
+  +void display()
 }
 
 class DellKeyboard implements Keyboard {
-+void display()
+  +void display()
 }
 
 class LenovoKeyboard implements Keyboard {
-+void display()
+  +void display()
 }
 
 interface KeyboardFactory {
-+Keyboard produce()
+  +Keyboard produce()
 }
 
 class DellKeyboardFactory implements KeyboardFactory {
-+Keyboard produce()
+  +Keyboard produce()
 }
 
 class LenovoKeyboardFactory implements KeyboardFactory {
-+Keyboard produce()
+  +Keyboard produce()
 }
 @enduml

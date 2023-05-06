@@ -11,6 +11,7 @@
         <module name="creation-simple-factory-pattern" />
         <module name="structure-adapter-pattern" />
         <module name="creation-singleton-pattern" />
+        <module name="creation-builder-pattern" />
         <module name="creation-abstract-factory-pattern" />
         <module name="creation-factory-method-pattern" />
       </profile>
@@ -22,6 +23,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="creation-abstract-factory-pattern" options="-parameters" />
+      <module name="creation-builder-pattern" options="-parameters" />
       <module name="creation-factory-method-pattern" options="-parameters" />
       <module name="creation-simple-factory-pattern" options="-parameters" />
       <module name="creation-singleton-pattern" options="-parameters" />

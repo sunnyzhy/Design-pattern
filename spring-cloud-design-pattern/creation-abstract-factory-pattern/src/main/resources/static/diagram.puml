@@ -5,56 +5,56 @@ Factory <-- Monitor
 Factory <-- Mouse
 
 interface Keyboard {
-+void input()
+  +void input()
 }
 
 class DellKeyboard implements Keyboard {
-+void input()
+  +void input()
 }
 
 class LenovoKeyboard implements Keyboard {
-+void input()
+  +void input()
 }
 
 interface Monitor {
-+void display()
+  +void display()
 }
 
 class DellMonitor implements Monitor {
-+void display()
+  +void display()
 }
 
 class LenovoMonitor implements Monitor {
-+void display()
+  +void display()
 }
 
 interface Mouse {
-+void click()
+  +void click()
 }
 
 class DellMouse implements Mouse {
-+void click()
+  +void click()
 }
 
 class LenovoMouse implements Mouse {
-+void click()
+  +void click()
 }
 
 interface Factory {
-+Keyboard produceKeyboard()
-+Monitor produceMonitor()
-+Mouse produceMouse()
+  +Keyboard produceKeyboard()
+  +Monitor produceMonitor()
+  +Mouse produceMouse()
 }
 
 class DellFactory implements Factory {
-+Keyboard produceKeyboard()
-+Monitor produceMonitor()
-+Mouse produceMouse()
+  +Keyboard produceKeyboard()
+  +Monitor produceMonitor()
+  +Mouse produceMouse()
 }
 
 class LenovoFactory implements Factory {
-+Keyboard produceKeyboard()
-+Monitor produceMonitor()
-+Mouse produceMouse()
+  +Keyboard produceKeyboard()
+  +Monitor produceMonitor()
+  +Mouse produceMouse()
 }
 @enduml

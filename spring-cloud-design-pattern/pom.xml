@@ -11,6 +11,7 @@
         <module>structure-facade-pattern</module>
         <module>structure-adapter-pattern</module>
         <module>creation-singleton-pattern</module>
+        <module>creation-builder-pattern</module>
     </modules>
 
     <parent>
@@ -38,7 +39,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
 
         <dependency>

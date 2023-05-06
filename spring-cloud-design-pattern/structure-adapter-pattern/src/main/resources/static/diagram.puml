@@ -3,23 +3,23 @@
 AdapterPlayer o-- WavAudio
 
 class WavAudio {
--String fileName
--AudioType audioType
+  -String fileName
+  -AudioType audioType
 
-+WavAudio wav(String fileName)
+  +WavAudio wav(String fileName)
 }
 
 interface Mp3Player {
-+void play()
+  +void play()
 }
 
 class AdapterPlayer implements Mp3Player {
-- String fileName
-- AudioType audioType
-- WavAudio wavAudio
+  - String fileName
+  - AudioType
+  - WavAudio
 
-+AdapterPlayer(WavAudio wavAudio)
-+void play()
+  +AdapterPlayer(WavAudio)
+  +void play()
 }
 
 @enduml

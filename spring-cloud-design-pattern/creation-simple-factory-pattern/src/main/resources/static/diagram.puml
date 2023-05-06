@@ -3,18 +3,18 @@
 KeyboardFactory <.. Keyboard
 
 interface Keyboard{
-+void display()
+  +void display()
 }
 
 class DellKeyboard implements Keyboard {
-+void display()
+  +void display()
 }
 
 class LenovoKeyboard implements Keyboard {
-+void display()
+  +void display()
 }
 
 class KeyboardFactory{
-+Keyboard produce(int code)
+  +Keyboard produce(int code)
 }
 @enduml

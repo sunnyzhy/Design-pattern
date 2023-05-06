@@ -1,4 +1,4 @@
-# 单例模式
+# 单例模式（Singleton Pattern）
 
 ## 定义
 

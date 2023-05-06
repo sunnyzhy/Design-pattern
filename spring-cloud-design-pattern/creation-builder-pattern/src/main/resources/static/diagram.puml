@@ -1,0 +1,48 @@
+@startuml
+
+class Product {
+  -Object part1
+  -Object part2
+  -Object part3
+
+  +void setPart1(Object part1)
+  +void setPart2(Object part2)
+  +void setPart3(Object part3)
+}
+
+abstract class Builder {
+  #Product
+
+  +abstract void buildPart1()
+  +abstract void buildPart2()
+  +abstract void buildPart3()
+  +abstract Product getProduct()
+}
+Builder --> Product
+
+class ConcreteBuilder1 extends Builder{
+    +void buildPart1()
+    +void buildPart2()
+    +void buildPart3()
+    +Product getProduct()
+}
+ConcreteBuilder1 --> Product
+
+class ConcreteBuilder2 extends Builder{
+    +void buildPart1()
+    +void buildPart2()
+    +void buildPart3()
+    +Product getProduct()
+}
+ConcreteBuilder2 --> Product
+
+class Director {
+    -Builder builder
+
+    +Director(Builder)
+    +Product construct()
+}
+Director --> Product
+Director --> Builder
+
+@enduml

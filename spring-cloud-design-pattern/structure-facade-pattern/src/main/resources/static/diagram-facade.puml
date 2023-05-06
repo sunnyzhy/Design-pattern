@@ -9,37 +9,41 @@ Facade o-- SubSystemB
 Facade o-- SubSystemC
 
 class Client1 {
--Facade facade;
-+void method()
+  -Facade facade;
+
+  +void method()
 }
 
 class Client2 {
--Facade facade;
-+void method()
+  -Facade facade;
+
+  +void method()
 }
 
 class Client3 {
--Facade facade;
-+void method()
+  -Facade facade;
+
+  +void method()
 }
 
 class Facade {
--SubSystemA subSystemA
--SubSystemB subSystemB
--SubSystemC subSystemC
-+void method()
+  -SubSystemA subSystemA
+  -SubSystemB subSystemB
+  -SubSystemC subSystemC
+
+  +void method()
 }
 
 class SubSystemA {
-+void methodA()
+  +void methodA()
 }
 
 class SubSystemB {
-+void methodB()
+  +void methodB()
 }
 
 class SubSystemC {
-+void methodC()
+  +void methodC()
 }
 
 @enduml

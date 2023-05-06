@@ -1,4 +1,4 @@
-# 简单工厂模式
+# 简单工厂模式（Simple Factory Pattern）
 
 ## 定义
 
