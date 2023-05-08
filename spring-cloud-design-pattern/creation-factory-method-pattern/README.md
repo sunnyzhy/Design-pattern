@@ -1,8 +1,8 @@
-# 工厂方法模式（Factory Pattern）
+# 工厂方法模式（Factory）
 
 ## 定义
 
-工厂方法模式（Factory Pattern）定义一个创建对象的接口，让实现这个接口的的类去决定实例化具体的类。工厂方法让类的实例化推迟到实现接口的子类中进行。
+工厂方法模式（Factory）定义一个创建对象的接口，让实现这个接口的的类去决定实例化具体的类。工厂方法让类的实例化推迟到实现接口的子类中进行。
 
 ## 角色
 
@@ -13,4 +13,4 @@
 
 ## 类图
 
-![工厂方法模式（Factory Pattern）](src/main/resources/static/diagram.png '工厂方法模式（Factory Pattern）')
+![工厂方法模式（Factory）](src/main/resources/static/diagram.png '工厂方法模式（Factory）')

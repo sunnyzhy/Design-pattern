@@ -1,8 +1,8 @@
-# 外观模式（Facade Pattern）
+# 外观模式（Facade）
 
 ## 定义
 
-外观模式（Facade Pattern）又叫作门面模式，为子系统中的一组接口提供一个一致的界面，外观模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。
+外观模式（Facade）又叫作门面模式，为子系统中的一组接口提供一个一致的界面，外观模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。
 
 在日常编码工作中，我们都在有意无意的大量使用外观模式。只要是高层模块需要调度多个子系统（2个以上的类对象），我们都会自觉地创建一个新的类封装这些子系统，提供精简的接口，让高层模块可以更加容易地间接调用这些子系统的功能。
 
@@ -20,11 +20,11 @@
 
 不使用外观模式：
 
-![外观模式（Facade Pattern）](src/main/resources/static/diagram.png '外观模式（Facade Pattern）')
+![外观模式（Facade）](src/main/resources/static/diagram.png '外观模式（Facade）')
 
 使用外观模式：
 
-![外观模式（Facade Pattern）](src/main/resources/static/diagram-facade.png '外观模式（Facade Pattern）')
+![外观模式（Facade）](src/main/resources/static/diagram-facade.png '外观模式（Facade）')
 
 从上面的类图里可以清晰地看到使用外观模式和不使用外观模式的区别：
 

@@ -1,8 +1,8 @@
-# 简单工厂模式（Simple Factory Pattern）
+# 简单工厂模式（Simple Factory）
 
 ## 定义
 
-简单工厂模式（Simple Factory Pattern）通过实例化一个工厂类，来获取对应的产品实例。我们不需要关注产品本身是如何被创建的，只需要通过工厂就可以获得相应的实例。
+简单工厂模式（Simple Factory）通过实例化一个工厂类，来获取对应的产品实例。我们不需要关注产品本身是如何被创建的，只需要通过工厂就可以获得相应的实例。
 
 ***简单工厂模式不在 GoF 23 种设计模式之列。***
 
@@ -14,4 +14,4 @@
 
 ## 类图
 
-![简单工厂模式（Simple Factory Pattern）](src/main/resources/static/diagram.png '简单工厂模式（Simple Factory Pattern）')
+![简单工厂模式（Simple Factory）](src/main/resources/static/diagram.png '简单工厂模式（Simple Factory）')

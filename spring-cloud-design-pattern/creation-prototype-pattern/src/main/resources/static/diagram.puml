@@ -1,0 +1,16 @@
+@startuml
+
+interface Prototype {
+  +Prototype clone()
+}
+
+class ConcretePrototype implements Prototype {
+  +ConcretePrototype clone()
+}
+
+class Client {
+  -ConcretePrototype concretePrototype
+}
+Client --> ConcretePrototype
+
+@enduml

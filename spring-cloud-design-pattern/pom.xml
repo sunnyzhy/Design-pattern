@@ -12,6 +12,7 @@
         <module>structure-adapter-pattern</module>
         <module>creation-singleton-pattern</module>
         <module>creation-builder-pattern</module>
+        <module>creation-prototype-pattern</module>
     </modules>
 
     <parent>

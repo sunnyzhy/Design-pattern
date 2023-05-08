@@ -1,8 +1,8 @@
-# 抽象工厂模式（Abstract Factory Pattern）
+# 抽象工厂模式（Abstract Factory）
 
 ## 定义
 
-抽象工厂模式（Abstract Factory Pattern）是提供了创建一系列服务的对象的接口。为了缩减工厂实现子类的数量，不必给每一个产品分配一个工厂类，可以将产品进行分组，每组中的不同产品由同一个工厂类的不同方法来创建。
+抽象工厂模式（Abstract Factory）是提供了创建一系列服务的对象的接口。为了缩减工厂实现子类的数量，不必给每一个产品分配一个工厂类，可以将产品进行分组，每组中的不同产品由同一个工厂类的不同方法来创建。
 
 ## 角色
 
@@ -13,7 +13,7 @@
 
 ## 类图
 
-![抽象工厂模式（Abstract Factory Pattern）](src/main/resources/static/diagram.png '抽象工厂模式（Abstract Factory Pattern）')
+![抽象工厂模式（Abstract Factory）](src/main/resources/static/diagram.png '抽象工厂模式（Abstract Factory）')
 
 总结:
 

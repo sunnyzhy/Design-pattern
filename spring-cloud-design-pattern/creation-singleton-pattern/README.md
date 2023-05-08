@@ -1,4 +1,4 @@
-# 单例模式（Singleton Pattern）
+# 单例模式（Singleton）
 
 ## 定义
 
@@ -17,7 +17,7 @@
 
 ## 类图
 
-![单例模式（Singleton Pattern）](src/main/resources/static/diagram.png '单例模式（Singleton Pattern）')
+![单例模式（Singleton）](src/main/resources/static/diagram.png '单例模式（Singleton）')
 
 ## 总结
 
