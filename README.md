@@ -20,7 +20,7 @@
 - [抽象工厂模式（Abstract Factory Pattern）](./spring-cloud-design-pattern/creation-abstract-factory-pattern '抽象工厂模式（Abstract Factory Pattern）')
 - [单例模式（Singleton Pattern）](./spring-cloud-design-pattern/creation-singleton-pattern '单例模式（Singleton Pattern）')
 - [建造者模式（Builder Pattern）](./spring-cloud-design-pattern/creation-builder-pattern '建造者模式（Builder Pattern）')
-- [原型模式（Prototype Pattern）](./spring-cloud-design-pattern/ '原型模式（Prototype Pattern）')
+- [原型模式（Prototype Pattern）](./spring-cloud-design-pattern/creation-prototype-pattern '原型模式（Prototype Pattern）')
 
 ### 2 结构型模式（Structural Patterns）
 

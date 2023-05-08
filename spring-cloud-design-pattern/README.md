@@ -9,7 +9,7 @@
 - [抽象工厂模式（Abstract Factory）](./creation-abstract-factory-pattern '抽象工厂模式（Abstract Factory）')
 - [单例模式（Singleton）](./creation-singleton-pattern '单例模式（Singleton）')
 - [建造者模式（Builder）](./creation-builder-pattern '建造者模式（Builder）')
-- [原型模式（Prototype）](./ '原型模式（Prototype）')
+- [原型模式（Prototype）](./creation-prototype-pattern '原型模式（Prototype）')
 
 ## 2 结构型模式（Structural）
 
