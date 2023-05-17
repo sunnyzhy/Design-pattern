@@ -14,6 +14,7 @@
         <module>creation-builder-pattern</module>
         <module>creation-prototype-pattern</module>
         <module>structure-bridge-pattern</module>
+        <module>structure-filter-pattern</module>
     </modules>
 
     <parent>

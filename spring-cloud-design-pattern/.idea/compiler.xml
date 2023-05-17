@@ -16,6 +16,7 @@
         <module name="creation-factory-method-pattern" />
         <module name="creation-prototype-pattern" />
         <module name="structure-bridge-pattern" />
+        <module name="structure-filter-pattern" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +36,7 @@
       <module name="structure-adapter-pattern" options="-parameters" />
       <module name="structure-bridge-pattern" options="-parameters" />
       <module name="structure-facade-pattern" options="-parameters" />
+      <module name="structure-filter-pattern" options="-parameters" />
     </option>
   </component>
 </project>

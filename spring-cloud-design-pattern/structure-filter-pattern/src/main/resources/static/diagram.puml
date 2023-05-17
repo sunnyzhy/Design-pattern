@@ -1,0 +1,17 @@
+@startuml
+
+Subject <-- AbstractFilter
+
+class Subject {
+
+}
+
+interface AbstractFilter {
+  +List<Subject> filter(List<Subject>)
+}
+
+class ConcreteFilter implements AbstractFilter {
+  +List<Subject> filter(List<Subject>)
+}
+
+@enduml

@@ -17,7 +17,7 @@
 
 - [适配器模式（Adapter）](./structure-adapter-pattern '适配器模式（Adapter）')
 - [桥接模式（Bridge）](./structure-bridge-pattern '桥接模式（Bridge）')
-- [过滤器模式（Filter/Criteria）](./ '过滤器模式（Filter/Criteria）')
+- [过滤器模式（Filter）](./structure-filter-pattern '过滤器模式（Filter）')
 - [组合模式（Composite）](./ '组合模式（Composite）')
 - [装饰器模式（Decorator）](./ '装饰器模式（Decorator）')
 - [外观模式（Facade）](./structure-facade-pattern '外观模式（Facade）')
