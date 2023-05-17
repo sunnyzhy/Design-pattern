@@ -5,10 +5,14 @@ Abstraction *-- Implementor
 abstract class Abstraction {
   #Implementor
 
+  #Abstraction(Implementor impl)
   +void feature()
 }
 
 class RefinedAbstraction extends Abstraction {
+  #Implementor
+
+  #RefinedAbstraction(Implementor impl)
   +void feature()
 }
 
