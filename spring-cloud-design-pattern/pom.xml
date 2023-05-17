@@ -13,6 +13,7 @@
         <module>creation-singleton-pattern</module>
         <module>creation-builder-pattern</module>
         <module>creation-prototype-pattern</module>
+        <module>structure-bridge-pattern</module>
     </modules>
 
     <parent>
@@ -25,11 +26,6 @@
     <groupId>org.springframework.cloud</groupId>
     <artifactId>spring-cloud-design-pattern</artifactId>
     <version>1.0.0</version>
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
 
     <dependencies>
         <dependency>

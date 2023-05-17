@@ -1,0 +1,27 @@
+@startuml
+
+Abstraction *-- Implementor
+
+abstract class Abstraction {
+  #Implementor
+
+  +void feature()
+}
+
+class RefinedAbstraction extends Abstraction {
+  +void feature()
+}
+
+interface Implementor {
+  +void method()
+}
+
+class ConcreteImplementorA implements Implementor {
+  +void method()
+}
+
+class ConcreteImplementorB implements Implementor {
+  +void method()
+}
+
+@enduml
