@@ -17,6 +17,7 @@
         <module name="creation-prototype-pattern" />
         <module name="structure-bridge-pattern" />
         <module name="structure-filter-pattern" />
+        <module name="structure-composite-pattern" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +36,7 @@
       <module name="spring-cloud-design-pattern-simple-factory" options="-parameters" />
       <module name="structure-adapter-pattern" options="-parameters" />
       <module name="structure-bridge-pattern" options="-parameters" />
+      <module name="structure-composite-pattern" options="-parameters" />
       <module name="structure-facade-pattern" options="-parameters" />
       <module name="structure-filter-pattern" options="-parameters" />
     </option>

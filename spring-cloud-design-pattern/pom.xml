@@ -15,6 +15,7 @@
         <module>creation-prototype-pattern</module>
         <module>structure-bridge-pattern</module>
         <module>structure-filter-pattern</module>
+        <module>structure-composite-pattern</module>
     </modules>
 
     <parent>

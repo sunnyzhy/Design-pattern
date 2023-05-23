@@ -1,0 +1,41 @@
+@startuml
+
+interface Component {
+  +void add(Component c))
+  +void remove(Component c)
+  +void getChild(int i)
+  +void operation()
+}
+
+class Leaf implements Component {
+  -String name
+
+  +Leaf(String name)
+  +void add(Component c))
+  +void remove(Component c)
+  +void getChild(int i)
+  +void operation()
+}
+
+class Composite implements Component {
+  -List<Component> children
+
+  +void add(Component c))
+  +void remove(Component c)
+  +void getChild(int i)
+  +void operation()
+}
+
+note as N
+    public void operation()
+    {
+        for(Object obj:children)
+        {
+            ((Component)obj).operation();
+        }
+    }
+end note
+
+Composite .. N
+
+@enduml
