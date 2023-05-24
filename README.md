@@ -30,7 +30,7 @@
 - [桥接模式（Bridge Pattern）](./spring-cloud-design-pattern/structure-bridge-pattern '桥接模式（Bridge Pattern）')
 - [过滤器模式（Filter/Criteria Pattern）](./spring-cloud-design-pattern/structure-filter-pattern '过滤器模式（Filter/Criteria Pattern）')
 - [组合模式（Composite Pattern）](./spring-cloud-design-pattern/structure-composite-pattern '组合模式（Composite Pattern）')
-- [装饰器模式（Decorator Pattern）](./spring-cloud-design-pattern/ '装饰器模式（Decorator Pattern）')
+- [装饰器模式（Decorator Pattern）](./spring-cloud-design-pattern/structure-decorator-pattern '装饰器模式（Decorator Pattern）')
 - [外观模式（Facade Pattern）](./spring-cloud-design-pattern/structure-facade-pattern '外观模式（Facade Pattern）')
 - [享元模式（Flyweight Pattern）](./spring-cloud-design-pattern/ '享元模式（Flyweight Pattern）')
 - [代理模式（Proxy Pattern）](./spring-cloud-design-pattern/ '代理模式（Proxy Pattern）')

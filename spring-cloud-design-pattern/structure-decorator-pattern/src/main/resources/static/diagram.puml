@@ -1,0 +1,41 @@
+@startuml
+
+Decorator o-- Component
+
+interface Component {
+  +void operation()
+}
+
+class ConcreteComponent implements Component {
+  +void operation()
+}
+
+abstract class Decorator implements Component {
+  -Component c
+
+  +Decorator(Component)
+  +void operation()
+}
+
+class ConcreteDecoratorA extends Decorator {
+  +ConcreteDecoratorA(Component)
+
+  +void operation()
+}
+
+class ConcreteDecoratorB extends Decorator {
+  +ConcreteDecoratorB(Component)
+
+  +void operation()
+}
+
+note as N
+    public void operation()
+    {
+        c.operation();
+    }
+end note
+
+Decorator .. N
+
+@enduml
