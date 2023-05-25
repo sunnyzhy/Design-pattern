@@ -17,6 +17,7 @@
         <module>structure-filter-pattern</module>
         <module>structure-composite-pattern</module>
         <module>structure-decorator-pattern</module>
+        <module>structure-flyweight-pattern</module>
     </modules>
 
     <parent>

@@ -1,0 +1,37 @@
+@startuml
+
+Flyweight o-- UnsharedConcreteFlyweight
+FlyweightFactory o-- Flyweight
+
+class UnsharedConcreteFlyweight {
+  -String property
+
+  +String getProperty()
+  +void setProperty(String property)
+}
+
+interface Flyweight {
+  +void operation(UnsharedConcreteFlyweight outState)
+}
+
+class ConcreteFlyweightA implements Flyweight {
+  -String key
+
+  +ConcreteFlyweightA(String key)
+  +void operation(UnsharedConcreteFlyweight outState)
+}
+
+class ConcreteFlyweightB implements Flyweight {
+  -String key
+
+  +ConcreteFlyweightB(String key)
+  +void operation(UnsharedConcreteFlyweight outState)
+}
+
+class FlyweightFactory {
+    -HashMap<String, Flyweight> flyweights
+
+    +Flyweight getFlyweight(String key)
+}
+
+@enduml

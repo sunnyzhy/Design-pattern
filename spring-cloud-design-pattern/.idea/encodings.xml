@@ -16,5 +16,6 @@
     <file url="file://$PROJECT_DIR$/structure-decorator-pattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/structure-facade-pattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/structure-filter-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/structure-flyweight-pattern/src/main/java" charset="UTF-8" />
   </component>
 </project>

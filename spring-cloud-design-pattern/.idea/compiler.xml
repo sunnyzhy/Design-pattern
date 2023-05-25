@@ -8,17 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="structure-facade-pattern" />
-        <module name="creation-simple-factory-pattern" />
         <module name="structure-adapter-pattern" />
         <module name="creation-singleton-pattern" />
-        <module name="creation-builder-pattern" />
-        <module name="creation-abstract-factory-pattern" />
         <module name="creation-factory-method-pattern" />
         <module name="creation-prototype-pattern" />
         <module name="structure-decorator-pattern" />
+        <module name="structure-flyweight-pattern" />
         <module name="structure-bridge-pattern" />
-        <module name="structure-filter-pattern" />
         <module name="structure-composite-pattern" />
+        <module name="creation-simple-factory-pattern" />
+        <module name="creation-builder-pattern" />
+        <module name="creation-abstract-factory-pattern" />
+        <module name="structure-filter-pattern" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -41,6 +42,7 @@
       <module name="structure-decorator-pattern" options="-parameters" />
       <module name="structure-facade-pattern" options="-parameters" />
       <module name="structure-filter-pattern" options="-parameters" />
+      <module name="structure-flyweight-pattern" options="-parameters" />
     </option>
   </component>
 </project>
