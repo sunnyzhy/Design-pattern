@@ -10,4 +10,4 @@ Cglib是一个高性能的代码生成包，它可以在运行期扩展 java 类
 
 ## 类图
 
-![Cglib代理](src/main/resources/static/cglib/diagram.png 'Cglib代理')
+![Cglib代理](../../../../../../../../src/main/resources/static/cglib/diagram.png 'Cglib代理')

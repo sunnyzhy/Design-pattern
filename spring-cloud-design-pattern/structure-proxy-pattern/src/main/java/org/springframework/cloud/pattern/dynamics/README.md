@@ -13,4 +13,4 @@
 
 ## 类图
 
-![动态代理](src/main/resources/static/dynamics/diagram.png '动态代理')
+![动态代理](../../../../../../../../src/main/resources/static/dynamics/diagram.png '动态代理')
