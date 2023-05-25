@@ -6,4 +6,4 @@
 
 ## 类图
 
-![静态代理](src/main/resources/static//statics/diagram.png '静态代理')
+![静态代理](/src/main/resources/static/statics/diagram.png '静态代理')
