@@ -22,7 +22,7 @@
 
 ## 类图
 
-![享元模式（Flyweight）](src/main/resources/static/diagram。png '享元模式（Flyweight）')
+![享元模式（Flyweight）](src/main/resources/static/diagram.png '享元模式（Flyweight）')
 
 总结:
 
