@@ -22,7 +22,7 @@
 - [装饰器模式（Decorator）](./structure-decorator-pattern '装饰器模式（Decorator）')
 - [外观模式（Facade）](./structure-facade-pattern '外观模式（Facade）')
 - [享元模式（Flyweight）](./structure-flyweight-pattern '享元模式（Flyweight）')
-- [代理模式（Proxy）](./ '代理模式（Proxy）')
+- [代理模式（Proxy）](./structure-proxy-pattern '代理模式（Proxy）')
 
 ## 3 行为型模式（Behavioral）
 

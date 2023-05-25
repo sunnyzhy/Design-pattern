@@ -33,7 +33,7 @@
 - [装饰器模式（Decorator Pattern）](./spring-cloud-design-pattern/structure-decorator-pattern '装饰器模式（Decorator Pattern）')
 - [外观模式（Facade Pattern）](./spring-cloud-design-pattern/structure-facade-pattern '外观模式（Facade Pattern）')
 - [享元模式（Flyweight Pattern）](./spring-cloud-design-pattern/structure-flyweight-pattern '享元模式（Flyweight Pattern）')
-- [代理模式（Proxy Pattern）](./spring-cloud-design-pattern/ '代理模式（Proxy Pattern）')
+- [代理模式（Proxy Pattern）](./spring-cloud-design-pattern/structure-proxy-pattern '代理模式（Proxy Pattern）')
 
 ### 3 行为型模式（Behavioral Patterns）
 

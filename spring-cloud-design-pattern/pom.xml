@@ -18,6 +18,7 @@
         <module>structure-composite-pattern</module>
         <module>structure-decorator-pattern</module>
         <module>structure-flyweight-pattern</module>
+        <module>structure-proxy-pattern</module>
     </modules>
 
     <parent>

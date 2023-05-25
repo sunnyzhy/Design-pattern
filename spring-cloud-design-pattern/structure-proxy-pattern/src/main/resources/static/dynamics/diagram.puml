@@ -1,0 +1,18 @@
+@startuml
+
+interface Subject {
+  +void request()
+}
+
+class RealSubject implements Subject {
+  +void request()
+}
+
+class Proxy {
+  -Object target
+
+  Proxy(Object target)
+  +Object getProxyInstance()
+}
+
+@enduml

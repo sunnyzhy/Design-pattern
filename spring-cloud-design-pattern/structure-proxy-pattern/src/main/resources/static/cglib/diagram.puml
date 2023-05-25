@@ -1,0 +1,15 @@
+@startuml
+
+class Subject {
+  +void request()
+}
+
+class Proxy implements MethodInterceptor {
+  -Object target
+
+  Proxy(Object target)
+  +Object getProxyInstance()
+  +Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy)
+}
+
+@enduml

@@ -1,0 +1,33 @@
+@startuml
+
+Proxy o-- RealSubject
+
+interface Subject {
+  +void request()
+}
+
+class RealSubject implements Subject {
+  +void request()
+}
+
+class Proxy implements Subject {
+  -Subject subject
+
+  +Proxy(Subject subject)
+  +void preRequest()
+  -void request()
+  -void postRequest()
+}
+
+note as N
+    public void request()
+    {
+        preRequest();
+        subject.operation();
+        postRequest();
+    }
+end note
+
+Proxy .. N
+
+@enduml

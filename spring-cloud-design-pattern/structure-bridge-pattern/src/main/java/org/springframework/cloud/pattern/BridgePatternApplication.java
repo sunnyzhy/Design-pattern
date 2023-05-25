@@ -5,10 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Hello world!
+ *
  */
 @SpringBootApplication
-public class StructureFilterPatternApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(StructureFilterPatternApplication.class, args);
+public class BridgePatternApplication
+{
+    public static void main( String[] args )
+    {
+        SpringApplication.run(BridgePatternApplication.class, args);
     }
 }

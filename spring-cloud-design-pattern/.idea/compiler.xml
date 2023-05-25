@@ -19,6 +19,7 @@
         <module name="creation-simple-factory-pattern" />
         <module name="creation-builder-pattern" />
         <module name="creation-abstract-factory-pattern" />
+        <module name="structure-proxy-pattern" />
         <module name="structure-filter-pattern" />
       </profile>
     </annotationProcessing>
@@ -43,6 +44,7 @@
       <module name="structure-facade-pattern" options="-parameters" />
       <module name="structure-filter-pattern" options="-parameters" />
       <module name="structure-flyweight-pattern" options="-parameters" />
+      <module name="structure-proxy-pattern" options="-parameters" />
     </option>
   </component>
 </project>

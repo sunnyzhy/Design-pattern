@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class StructureBridgePatternApplication
+public class FlyweightPatternApplication
 {
     public static void main( String[] args )
     {
-        SpringApplication.run(StructureBridgePatternApplication.class, args);
+        SpringApplication.run(FlyweightPatternApplication.class, args);
     }
 }
