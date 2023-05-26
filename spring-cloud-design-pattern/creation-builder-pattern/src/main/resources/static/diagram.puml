@@ -1,5 +1,9 @@
 @startuml
 
+Builder *-- Product
+Director o-- Builder
+Director o-- Product
+
 class Product {
   -Object part1
   -Object part2
@@ -18,23 +22,20 @@ abstract class Builder {
   +abstract void buildPart3()
   +abstract Product getProduct()
 }
-Builder --> Product
 
-class ConcreteBuilder1 extends Builder{
+class ConcreteBuilder1 extends Builder {
     +void buildPart1()
     +void buildPart2()
     +void buildPart3()
     +Product getProduct()
 }
-ConcreteBuilder1 --> Product
 
-class ConcreteBuilder2 extends Builder{
+class ConcreteBuilder2 extends Builder {
     +void buildPart1()
     +void buildPart2()
     +void buildPart3()
     +Product getProduct()
 }
-ConcreteBuilder2 --> Product
 
 class Director {
     -Builder builder
@@ -42,7 +43,5 @@ class Director {
     +Director(Builder)
     +Product construct()
 }
-Director --> Product
-Director --> Builder
 
 @enduml

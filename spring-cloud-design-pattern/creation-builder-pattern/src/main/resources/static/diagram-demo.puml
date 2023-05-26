@@ -1,0 +1,52 @@
+@startuml
+
+ComputerBuilder *-- Computer
+ComputerDirector o-- ComputerBuilder
+ComputerDirector o-- Computer
+
+class Computer {
+  -String CPU
+  -String memory
+  -String motherboard
+  -String hardDisk
+
+  +void setCPU(String CPU)
+  +void setMemory(String memory)
+  +void setMotherboard(String motherboard)
+  +void setHardDisk(String hardDisk)
+}
+
+abstract class ComputerBuilder {
+  #Computer
+
+  +abstract void buildCpu()
+  +abstract void buildMemory()
+  +abstract void buildMotherboard()
+  +abstract void buildHardDisk()
+  +abstract Computer getComputer()
+}
+
+class GameComputerBuilder extends ComputerBuilder {
+  +void buildCpu()
+  +void buildMemory()
+  +void buildMotherboard()
+  +void buildHardDisk()
+  +Computer getComputer()
+}
+
+class OfficeComputerBuilder extends ComputerBuilder {
+  +void buildCpu()
+  +void buildMemory()
+  +void buildMotherboard()
+  +void buildHardDisk()
+  +Computer getComputer()
+}
+
+class ComputerDirector {
+    -ComputerBuilder builder;
+
+    +ComputerDirector(ComputerBuilder builder)
+    +Computer construct()
+}
+
+@enduml

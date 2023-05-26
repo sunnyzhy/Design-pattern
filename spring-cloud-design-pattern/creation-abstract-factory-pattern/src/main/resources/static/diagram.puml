@@ -1,60 +1,44 @@
 @startuml
 
-Factory <-- Keyboard
-Factory <-- Monitor
-Factory <-- Mouse
+AbstractFactory *-- ProductA
+AbstractFactory *-- ProductB
 
-interface Keyboard {
-  +void input()
+interface ProductA {
+  +void operationA()
 }
 
-class DellKeyboard implements Keyboard {
-  +void input()
+class ConcreteProductA1 implements ProductA {
+  +void operationA()
 }
 
-class LenovoKeyboard implements Keyboard {
-  +void input()
+class ConcreteProductA2 implements ProductA {
+  +void operationA()
 }
 
-interface Monitor {
-  +void display()
+interface ProductB {
+  +void operationB()
 }
 
-class DellMonitor implements Monitor {
-  +void display()
+class ConcreteProductB1 implements ProductB {
+  +void operationB()
 }
 
-class LenovoMonitor implements Monitor {
-  +void display()
+class ConcreteProductB2 implements ProductB {
+  +void operationB()
 }
 
-interface Mouse {
-  +void click()
+interface AbstractFactory {
+  +ProductA createProductA()
+  +ProductB createProductB()
 }
 
-class DellMouse implements Mouse {
-  +void click()
+class ConcreteFactory1 implements AbstractFactory {
+  +ProductA createProductA()
+  +ProductB createProductB()
 }
 
-class LenovoMouse implements Mouse {
-  +void click()
-}
-
-interface Factory {
-  +Keyboard produceKeyboard()
-  +Monitor produceMonitor()
-  +Mouse produceMouse()
-}
-
-class DellFactory implements Factory {
-  +Keyboard produceKeyboard()
-  +Monitor produceMonitor()
-  +Mouse produceMouse()
-}
-
-class LenovoFactory implements Factory {
-  +Keyboard produceKeyboard()
-  +Monitor produceMonitor()
-  +Mouse produceMouse()
+class ConcreteFactory2 implements AbstractFactory {
+  +ProductA createProductA()
+  +ProductB createProductB()
 }
 @enduml
