@@ -34,7 +34,7 @@
 - [迭代器模式（Iterator）](./ '迭代器模式（Iterator）')
 - [中介者模式（Mediator）](./ '中介者模式（Mediator）')
 - [备忘录模式（Memento）](./ '备忘录模式（Memento）')
-- [观察者模式（Observer）](./ '观察者模式（Observer）')
+- [观察者模式（Observer）](./behavior-observer-pattern '观察者模式（Observer）')
 - [状态模式（State）](./ '状态模式（State）')
 - [策略模式（Strategy）](./ '策略模式（Strategy）')
 - [模板模式（Template）](./ '模板模式（Template）')

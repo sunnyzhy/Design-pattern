@@ -1,0 +1,43 @@
+@startuml
+
+Subject o-- Observer
+
+interface Observer {
+  +void operation(String message)
+}
+
+class ConcreteObserverA implements Observer {
+  +void operation(String message)
+}
+
+class ConcreteObserverB implements Observer {
+  +void operation(String message)
+}
+
+interface Subject {
+  +void add(Observer)
+  +void remove(Observer)
+  +void notify(String message)
+}
+
+class ConcreteSubject implements Subject {
+  -List<Observer> observerList
+
+  +void add(Observer)
+  +void remove(Observer)
+  +void notify(String message)
+}
+
+note as N
+    public void notify(String message)
+    {
+        for (Observer observer : observerList)
+        {
+            observer.operation(message);
+        }
+    }
+end note
+
+Subject .. N
+
+@enduml

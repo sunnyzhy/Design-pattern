@@ -1,0 +1,69 @@
+@startuml
+
+Subject o-- Observer
+
+interface Subject {
+  +void add(Observer)
+  +void remove(Observer)
+  +void notify(String message)
+}
+
+interface Observer {
+  +void operation(String message)
+}
+
+class Mouse implements Subject {
+  -List<Observer> observerList
+
+  +void add(Observer)
+  +void remove(Observer)
+  +void notify(String message)
+}
+
+class Cat implements Observer, Subject {
+  -List<Observer> observerList
+  -String behavior
+
+  +Cat(String behavior)
+  +void add(Observer)
+  +void remove(Observer)
+  +void notify(String message)
+  +void operation(String message)
+}
+
+class Dog implements Observer, Subject {
+  -List<Observer> observerList
+  -String behavior
+
+  +Dog(String behavior)
+  +void add(Observer)
+  +void remove(Observer)
+  +void notify(String message)
+  +void operation(String message)
+}
+
+class Baby implements Observer {
+  -String behavior
+
+  +Baby(String behavior)
+  +void operation(String message)
+}
+
+class Master implements Observer {
+  -String behavior
+
+  +Master(String behavior)
+  +void operation(String message)
+}
+
+note as N
+    public void operation(String message) {
+        System.out.println(message + " ---> " + this.behavior);
+        notify(this.behavior);
+    }
+end note
+
+Cat .. N
+Dog .. N
+
+@enduml

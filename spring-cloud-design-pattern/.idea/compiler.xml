@@ -14,6 +14,7 @@
         <module name="creation-prototype-pattern" />
         <module name="structure-decorator-pattern" />
         <module name="structure-flyweight-pattern" />
+        <module name="behavior-observer-pattern" />
         <module name="structure-bridge-pattern" />
         <module name="structure-composite-pattern" />
         <module name="creation-simple-factory-pattern" />
@@ -29,6 +30,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="behavior-observer-pattern" options="-parameters" />
       <module name="creation-abstract-factory-pattern" options="-parameters" />
       <module name="creation-builder-pattern" options="-parameters" />
       <module name="creation-factory-method-pattern" options="-parameters" />

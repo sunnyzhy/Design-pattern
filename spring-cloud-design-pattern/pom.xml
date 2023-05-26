@@ -19,6 +19,7 @@
         <module>structure-decorator-pattern</module>
         <module>structure-flyweight-pattern</module>
         <module>structure-proxy-pattern</module>
+        <module>behavior-observer-pattern</module>
     </modules>
 
     <parent>
