@@ -20,11 +20,11 @@
 
 不使用外观模式：
 
-![外观模式（Facade）](src/main/resources/static/diagram.png '外观模式（Facade）')
+![外观模式（Facade）](src/main/resources/static/normal/diagram.png '外观模式（Facade）')
 
 使用外观模式：
 
-![外观模式（Facade）](src/main/resources/static/diagram-facade.png '外观模式（Facade）')
+![外观模式（Facade）](src/main/resources/static/facade/diagram.png '外观模式（Facade）')
 
 从上面的类图里可以清晰地看到使用外观模式和不使用外观模式的区别：
 

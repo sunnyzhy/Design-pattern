@@ -12,6 +12,8 @@
 
 ## 总结
 
+代理模式分为:
+
 - [静态代理](src/main/java/org/springframework/cloud/pattern/statics '静态代理')
 - [动态代理](src/main/java/org/springframework/cloud/pattern/dynamics '动态代理')
 - [Cglib代理](src/main/java/org/springframework/cloud/pattern/cglib 'Cglib代理')

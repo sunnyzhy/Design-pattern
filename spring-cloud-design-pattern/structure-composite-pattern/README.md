@@ -10,19 +10,9 @@
 - 树叶构件（Leaf）：是组合中的叶节点对象，它没有子节点，用于实现抽象构件角色中 声明的公共接口。
 - 树枝构件（Composite）：是组合中的分支节点对象，它有子节点。它实现了抽象构件角色中声明的接口，它的主要作用是存储和管理子部件，通常包含 Add()、Remove()、GetChild() 等方法。
 
-## 类图
+## 总结
 
-- 透明方式
+组合模式分为:
 
-   ![桥接模式（Bridge）- 透明方式](src/main/resources/static/diagram-transparent.png '桥接模式（Bridge）- 透明方式')
-
-- 安全方式
-
-   ![桥接模式（Bridge）- 安全方式](src/main/resources/static/diagram-safe.png '桥接模式（Bridge）- 安全方式')
-
-总结:
-
-组合模式分为透明方式的组合模式和安全方式的组合模式：
-
-- 透明方式：在该方式中，由于抽象构件声明了所有子类中的全部方法，所以客户端无须区别树叶对象和树枝对象，对客户端来说是透明的。但其缺点是：树叶构件本来没有 Add()、Remove() 及 GetChild() 方法，却要实现它们（空实现或抛异常），这样会带来一些安全性问题。
-- 安全方式：在该方式中，将管理子构件的方法移到树枝构件中，抽象构件和树叶构件没有对子对象的管理方法，这样就避免了上一种方式的安全性问题，但由于叶子和分支有不同的接口，客户端在调用时要知道树叶对象和树枝对象的存在，所以失去了透明性。
+- [透明方式](src/main/java/org/springframework/cloud/pattern/transparent '透明方式')
+- [安全方式](src/main/java/org/springframework/cloud/pattern/safe '安全方式')
