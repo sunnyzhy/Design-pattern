@@ -1,0 +1,11 @@
+@startuml
+
+interface Filter<T> {
+  +List<T> filter(List<T> items, Predicate<T> predicate)
+}
+
+class FilterImpl implements Filter {
+  +List<T> filter(List<T> items, Predicate<T> predicate)
+}
+
+@enduml

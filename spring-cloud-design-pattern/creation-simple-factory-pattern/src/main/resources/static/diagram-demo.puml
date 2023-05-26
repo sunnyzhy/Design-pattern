@@ -1,0 +1,21 @@
+@startuml
+
+KeyboardFactory *-- Keyboard
+
+interface Keyboard {
+  +void display()
+}
+
+class DellKeyboard implements Keyboard {
+  +void display()
+}
+
+class LenovoKeyboard implements Keyboard {
+  +void display()
+}
+
+class KeyboardFactory {
+  +Keyboard produce(int code)
+}
+
+@enduml

@@ -13,7 +13,13 @@
 
 ## 类图
 
+### 类图
+
 ![桥接模式（Bridge）](src/main/resources/static/diagram.png '桥接模式（Bridge）')
+
+### 示例
+
+![桥接模式（Bridge）](src/main/resources/static/diagram-demo.png '桥接模式（Bridge）')
 
 问题:
 

@@ -1,0 +1,34 @@
+@startuml
+
+Decorator o-- Drink
+
+interface Drink {
+  +String info()
+}
+
+class Coffee implements Drink {
+  +String info()
+}
+
+abstract class Decorator implements Drink {
+  -Drink drink
+
+  +Decorator(Drink)
+  +String info()
+}
+
+class Milk extends Decorator {
+  -Drink drink
+
+  +Milk(Drink)
+  +String info()
+}
+
+class Sugar extends Decorator {
+  -Drink drink
+
+  +Sugar(Drink)
+  +String info()
+}
+
+@enduml

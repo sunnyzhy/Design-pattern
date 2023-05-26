@@ -1,6 +1,6 @@
 @startuml
 
-Abstraction *-- Implementor
+Abstraction o-- Implementor
 
 abstract class Abstraction {
   #Implementor

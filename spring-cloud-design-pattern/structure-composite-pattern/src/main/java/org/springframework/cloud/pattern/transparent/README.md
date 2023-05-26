@@ -6,4 +6,10 @@
 
 ## 类图
 
+### 类图
+
 ![透明方式](../../../../../../../../src/main/resources/static/transparent/diagram.png '透明方式')
+
+### 示例
+
+![透明方式](../../../../../../../../src/main/resources/static/transparent/diagram-demo.png '透明方式')

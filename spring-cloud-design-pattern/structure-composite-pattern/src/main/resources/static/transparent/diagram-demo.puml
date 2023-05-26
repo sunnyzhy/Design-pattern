@@ -1,0 +1,34 @@
+@startuml
+
+interface Component {
+  +void add(Component)
+  +void remove(Component)
+  +Component getChild(int i)
+  +String getName()
+  +void operation()
+}
+
+class File implements Component {
+  -String name
+
+  +Folder(String name)
+  +void add(Component)
+  +void remove(Component)
+  +Component getChild(int i)
+  +String getName()
+  +void operation()
+}
+
+class Folder implements Component {
+  -String name
+  -List<Component> componentList
+
+  +Folder(String name)
+  +void add(Component)
+  +void remove(Component)
+  +Component getChild(int i)
+  +String getName()
+  +void operation()
+}
+
+@enduml

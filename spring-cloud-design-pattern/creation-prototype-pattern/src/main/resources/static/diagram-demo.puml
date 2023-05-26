@@ -1,0 +1,11 @@
+@startuml
+
+interface Cloneable {
+  +Object clone()
+}
+
+class Book implements Cloneable {
+  +Book clone()
+}
+
+@enduml

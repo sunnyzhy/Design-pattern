@@ -6,4 +6,10 @@
 
 ## 类图
 
+### 类图
+
 ![安全方式](../../../../../../../../src/main/resources/static/safe/diagram.png '安全方式')
+
+### 示例
+
+![安全方式](../../../../../../../../src/main/resources/static/safe/diagram-demo.png '安全方式')

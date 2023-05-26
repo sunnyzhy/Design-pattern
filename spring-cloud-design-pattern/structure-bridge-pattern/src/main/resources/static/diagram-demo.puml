@@ -1,0 +1,38 @@
+@startuml
+
+Shape *-- Color
+
+abstract class Shape {
+  #Color
+
+  +void setColor(Color)
+  +abstract void draw()
+}
+
+class Rectangle extends Shape {
+  #Color
+
+  +void setColor(Color)
+  +abstract void draw()
+}
+
+class Circle extends Shape {
+  #Color
+
+  +void setColor(Color)
+  +abstract void draw()
+}
+
+interface Color {
+  +void paint()
+}
+
+class Blue implements Color {
+  +void paint()
+}
+
+class Red implements Color {
+  +void paint()
+}
+
+@enduml

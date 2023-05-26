@@ -12,4 +12,10 @@
 
 ## 类图
 
+### 类图
+
 ![过滤器模式（Filter）](src/main/resources/static/diagram.png '过滤器模式（Filter）')
+
+### 示例
+
+![过滤器模式（Filter）](src/main/resources/static/diagram-demo.png '过滤器模式（Filter）')

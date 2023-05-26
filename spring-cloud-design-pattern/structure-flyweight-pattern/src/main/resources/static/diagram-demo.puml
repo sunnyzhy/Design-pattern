@@ -1,0 +1,37 @@
+@startuml
+
+Piece o-- Point
+PieceFactory o-- Piece
+Color <-- PieceFactory
+
+class Point {
+  -double x;
+  -double y
+
+  +Point(double x, double y)
+}
+
+interface Piece {
+  +void setLocation(Point)
+}
+
+class BlackPiece implements Piece {
+  +void setLocation(Point)
+}
+
+class WhitePiece implements Piece {
+  +void setLocation(Point)
+}
+
+enum Color {
+  WHITE
+  BLACK
+}
+
+class PieceFactory {
+  -HashMap<Integer, Piece> pieceHashMap
+
+  +Piece getPiece(Color)
+}
+
+@enduml

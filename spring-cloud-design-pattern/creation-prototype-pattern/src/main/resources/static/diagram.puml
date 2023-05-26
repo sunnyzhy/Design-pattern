@@ -1,5 +1,7 @@
 @startuml
 
+Client *-- ConcretePrototype
+
 interface Prototype {
   +Prototype clone()
 }
@@ -11,6 +13,5 @@ class ConcretePrototype implements Prototype {
 class Client {
   -ConcretePrototype concretePrototype
 }
-Client --> ConcretePrototype
 
 @enduml

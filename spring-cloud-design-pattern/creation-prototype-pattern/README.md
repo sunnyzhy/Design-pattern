@@ -12,11 +12,17 @@
 
 ## 类图
 
+### 类图
+
 ![原型模式（Prototype）](src/main/resources/static/diagram.png '原型模式（Prototype）')
+
+### 示例
+
+![原型模式（Prototype）](src/main/resources/static/diagram-demo.png '原型模式（Prototype）')
 
 ## 分类
 
-- 浅克隆：创建一个新对象，新对象的属性和原来对象完全相同，对于非基本类型属性，仍指向原有属性所指向的对象的内存地址
-- 深克隆：创建一个新对象，属性中引用的其他对象也会被克隆，不再指向原有对象地址。
+代理模式分为:
 
-Java 中的 Object 类中提高了 ```clone()``` 方法来实现浅克隆。Cloneable 接口是上面的类图中的抽象原型类，而实现了 Cloneable 接口的子实现类就是具体的原型类。
+- [浅克隆](src/main/java/org/springframework/cloud/pattern/shallow '浅克隆')
+- [深克隆](src/main/java/org/springframework/cloud/pattern/deep '深克隆')

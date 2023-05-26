@@ -15,7 +15,13 @@
 
 ## 类图
 
+### 类图
+
 ![适配器模式（Adapter）](src/main/resources/static/diagram.png '适配器模式（Adapter）')
+
+### 示例
+
+![适配器模式（Adapter）](src/main/resources/static/diagram-demo.png '适配器模式（Adapter）')
 
 总结:
 

@@ -1,51 +1,67 @@
 @startuml
 
-Client1 <-- SubSystem1
-Client1 <-- SubSystem2
-Client1 <-- SubSystem3
+Client1 <-- SubSystemA
+Client1 <-- SubSystemB
+Client1 <-- SubSystemC
 
-Client2 <-- SubSystem1
-Client2 <-- SubSystem2
-Client2 <-- SubSystem3
+Client2 *-- SubSystemA
+Client2 *-- SubSystemB
+Client2 *-- SubSystemC
 
-Client3 <-- SubSystem1
-Client3 <-- SubSystem2
-Client3 <-- SubSystem3
+Client3 *-- SubSystemA
+Client3 *-- SubSystemB
+Client3 *-- SubSystemC
 
 class Client1 {
-  -SubSystem1 subSystem1
-  -SubSystem2 subSystem2
-  -SubSystem3 subSystem3
+  -SubSystemA subSystem1
+  -SubSystemB subSystem2
+  -SubSystemC subSystem3
 
+  +Client1()
   +void method()
 }
 
 class Client2 {
-  -SubSystem1 subSystem1
-  -SubSystem2 subSystem2
-  -SubSystem3 subSystem3
+  -SubSystemA subSystem1
+  -SubSystemB subSystem2
+  -SubSystemC subSystem3
 
+  +Client2()
   +void method()
 }
 
 class Client3 {
-  -SubSystem1 subSystem1
-  -SubSystem2 subSystem2
-  -SubSystem3 subSystem3
+  -SubSystemA subSystem1
+  -SubSystemB subSystem2
+  -SubSystemC subSystem3
 
+  +Client3()
   +void method()
 }
 
-class SubSystem1 {
+class SubSystemA {
   +void method1()
 }
 
-class SubSystem2 {
+class SubSystemB {
   +void method2()
 }
 
-class SubSystem3 {
+class SubSystemC {
   +void method3()
 }
+
+note as M
+    public Client()
+    {
+        this.subSystemA = new SubSystemA();
+        this.subSystemB = new SubSystemB();
+        this.subSystemC = new SubSystemC();
+    }
+end note
+
+Client1 .. M
+Client2 .. M
+Client3 .. M
 
 @enduml

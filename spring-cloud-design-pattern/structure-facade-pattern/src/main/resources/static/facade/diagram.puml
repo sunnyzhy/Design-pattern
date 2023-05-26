@@ -1,28 +1,31 @@
 @startuml
 
-Client1 <-- Facade
-Client2 <-- Facade
-Client3 <-- Facade
+Client1 *-- Facade
+Client2 *-- Facade
+Client3 *-- Facade
 
-Facade o-- SubSystemA
-Facade o-- SubSystemB
-Facade o-- SubSystemC
+Facade *-- SubSystemA
+Facade *-- SubSystemB
+Facade *-- SubSystemC
 
 class Client1 {
   -Facade facade;
 
+  +Client1()
   +void method()
 }
 
 class Client2 {
   -Facade facade;
 
+  +Client2()
   +void method()
 }
 
 class Client3 {
   -Facade facade;
 
+  +Client3()
   +void method()
 }
 
@@ -31,6 +34,7 @@ class Facade {
   -SubSystemB subSystemB
   -SubSystemC subSystemC
 
+  +Facade()
   +void method()
 }
 
@@ -45,5 +49,27 @@ class SubSystemB {
 class SubSystemC {
   +void methodC()
 }
+
+note as N
+    public Client()
+    {
+        this.facade = new Facade();
+    }
+end note
+
+Client1 .. N
+Client2 .. N
+Client3 .. N
+
+note as M
+    public Facade()
+    {
+        this.subSystemA = new SubSystemA();
+        this.subSystemB = new SubSystemB();
+        this.subSystemC = new SubSystemC();
+    }
+end note
+
+Facade .. M
 
 @enduml

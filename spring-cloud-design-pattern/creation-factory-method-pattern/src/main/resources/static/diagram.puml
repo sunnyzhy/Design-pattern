@@ -1,28 +1,29 @@
 @startuml
 
-KeyboardFactory <.. Keyboard
+AbstractFactory *-- Product
 
-interface Keyboard {
-  +void display()
+interface Product {
+  +void operation()
 }
 
-class DellKeyboard implements Keyboard {
-  +void display()
+class ConcreteProductA implements Product {
+  +void operation()
 }
 
-class LenovoKeyboard implements Keyboard {
-  +void display()
+class ConcreteProductB implements Product {
+  +void operation()
 }
 
-interface KeyboardFactory {
-  +Keyboard produce()
+interface AbstractFactory {
+  +Product createProduct()
 }
 
-class DellKeyboardFactory implements KeyboardFactory {
-  +Keyboard produce()
+class ConcreteFactoryA implements AbstractFactory {
+  +Product createProduct()
 }
 
-class LenovoKeyboardFactory implements KeyboardFactory {
-  +Keyboard produce()
+class ConcreteFactoryB implements AbstractFactory {
+  +Product createProduct()
 }
+
 @enduml

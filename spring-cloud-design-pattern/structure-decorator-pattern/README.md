@@ -13,7 +13,13 @@
 
 ## 类图
 
+### 类图
+
 ![装饰器模式（Decorator）](src/main/resources/static/diagram.png '装饰器模式（Decorator）')
+
+### 示例
+
+![装饰器模式（Decorator）](src/main/resources/static/diagram-demo.png '装饰器模式（Decorator）')
 
 总结:
 

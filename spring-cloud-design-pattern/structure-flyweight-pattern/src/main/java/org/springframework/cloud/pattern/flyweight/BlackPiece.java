@@ -8,7 +8,7 @@ import org.springframework.cloud.pattern.unsharable.Point;
  */
 public class BlackPiece implements Piece {
     @Override
-    public void SetLocation(Point point) {
+    public void setLocation(Point point) {
         System.out.println("黑棋坐标: x = " + point.getX() + ", y = " + point.getY());
     }
 }

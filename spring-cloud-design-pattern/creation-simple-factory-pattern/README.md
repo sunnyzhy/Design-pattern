@@ -14,4 +14,10 @@
 
 ## 类图
 
+### 类图
+
 ![简单工厂模式（Simple Factory）](src/main/resources/static/diagram.png '简单工厂模式（Simple Factory）')
+
+### 示例
+
+![简单工厂模式（Simple Factory）](src/main/resources/static/diagram-demo.png '简单工厂模式（Simple Factory）')

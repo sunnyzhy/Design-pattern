@@ -7,5 +7,5 @@ import org.springframework.cloud.pattern.unsharable.Point;
  * @date 2023/5/25 11:31
  */
 public interface Piece {
-    void SetLocation(Point point);
+    void setLocation(Point point);
 }

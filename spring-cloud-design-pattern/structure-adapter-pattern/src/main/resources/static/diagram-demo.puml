@@ -1,0 +1,25 @@
+@startuml
+
+AdapterPlayer o-- WavAudio
+
+class WavAudio {
+  -String fileName
+  -AudioType audioType
+
+  +WavAudio wav(String fileName)
+}
+
+interface Mp3Player {
+  +void play()
+}
+
+class AdapterPlayer implements Mp3Player {
+  - String fileName
+  - AudioType
+  - WavAudio
+
+  +AdapterPlayer(WavAudio)
+  +void play()
+}
+
+@enduml

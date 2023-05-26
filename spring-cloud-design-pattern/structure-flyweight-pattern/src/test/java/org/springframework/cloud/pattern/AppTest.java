@@ -16,12 +16,12 @@ public class AppTest {
     void test() {
         PieceFactory pieceFactory = new PieceFactory();
         Piece piece = pieceFactory.getPiece(Color.WHITE);
-        piece.SetLocation(new Point(1.1, 2.1));
+        piece.setLocation(new Point(1.1, 2.1));
         piece = pieceFactory.getPiece(Color.BLACK);
-        piece.SetLocation(new Point(10.1, 20.1));
+        piece.setLocation(new Point(10.1, 20.1));
         piece = pieceFactory.getPiece(Color.WHITE);
-        piece.SetLocation(new Point(2.1, 1.1));
+        piece.setLocation(new Point(2.1, 1.1));
         piece = pieceFactory.getPiece(Color.BLACK);
-        piece.SetLocation(new Point(9.1, 20.1));
+        piece.setLocation(new Point(9.1, 20.1));
     }
 }
