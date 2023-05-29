@@ -9,7 +9,7 @@ interface Subject {
 }
 
 interface Observer {
-  +void operation(String message)
+  +void update(String message)
 }
 
 class Mouse implements Subject {
@@ -21,49 +21,60 @@ class Mouse implements Subject {
 }
 
 class Cat implements Observer, Subject {
+  -STATE state
   -List<Observer> observerList
-  -String behavior
 
-  +Cat(String behavior)
+  +Cat()
   +void add(Observer)
   +void remove(Observer)
   +void notify(String message)
-  +void operation(String message)
+  +void update(String message)
 }
 
 class Dog implements Observer, Subject {
+  -STATE state
   -List<Observer> observerList
-  -String behavior
 
-  +Dog(String behavior)
+  +Dog()
   +void add(Observer)
   +void remove(Observer)
   +void notify(String message)
-  +void operation(String message)
+  +void update(String message)
 }
 
 class Baby implements Observer {
-  -String behavior
+  -STATE state
 
-  +Baby(String behavior)
-  +void operation(String message)
+  +Baby()
+  +void update(String message)
 }
 
 class Master implements Observer {
-  -String behavior
+  -STATE state
 
-  +Master(String behavior)
-  +void operation(String message)
+  +Master()
+  +void update(String message)
 }
 
 note as N
-    public void operation(String message) {
-        System.out.println(message + " ---> " + this.behavior);
-        notify(this.behavior);
+    public void update(String message) {
+        this.state = STATE;
+        System.out.println(message + " ---> " + this.state.name);
+        notify(this.state.name);
+    }
+end note
+
+note as M
+    public void update(String message) {
+        this.state = STATE;
+        System.out.println(message + " ---> " + this.state.name);
     }
 end note
 
 Cat .. N
 Dog .. N
+
+Baby .. M
+Master .. M
 
 @enduml

@@ -3,15 +3,15 @@
 Subject o-- Observer
 
 interface Observer {
-  +void operation(String message)
+  +void update(Object state)
 }
 
 class ConcreteObserverA implements Observer {
-  +void operation(String message)
+  +void update(Object state)
 }
 
 class ConcreteObserverB implements Observer {
-  +void operation(String message)
+  +void update(Object state)
 }
 
 interface Subject {
@@ -33,7 +33,7 @@ note as N
     {
         for (Observer observer : observerList)
         {
-            observer.operation(message);
+            observer.update(message);
         }
     }
 end note

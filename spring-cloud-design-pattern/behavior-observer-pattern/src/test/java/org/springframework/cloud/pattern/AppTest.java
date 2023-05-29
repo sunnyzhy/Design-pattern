@@ -16,16 +16,17 @@ public class AppTest {
     @Test
     void test() {
         Mouse mouse = new Mouse();
-        Cat cat = new Cat("猫：喵呜");
-        Dog dog = new Dog("狗：汪汪");
-        Baby baby = new Baby("婴儿哭");
-        Master master = new Master("主人醒");
+        Cat cat = new Cat();
+        Dog dog = new Dog();
+        Baby baby = new Baby();
+        Master master = new Master();
 
         mouse.add(cat);
         cat.add(dog);
         dog.add(baby);
         dog.add(master);
 
+        System.out.println("==========");
         mouse.notify("老鼠跑");
     }
 }

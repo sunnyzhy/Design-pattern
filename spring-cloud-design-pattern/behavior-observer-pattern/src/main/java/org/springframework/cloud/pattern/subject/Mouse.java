@@ -25,7 +25,7 @@ public class Mouse implements Subject {
     @Override
     public void notify(String message) {
         for (Observer observer : this.observerList) {
-            observer.operation(message);
+            observer.update(message);
         }
     }
 }
