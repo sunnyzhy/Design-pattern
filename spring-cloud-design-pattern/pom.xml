@@ -20,6 +20,7 @@
         <module>structure-flyweight-pattern</module>
         <module>structure-proxy-pattern</module>
         <module>behavior-observer-pattern</module>
+        <module>behavior-responsibility-pattern</module>
     </modules>
 
     <parent>

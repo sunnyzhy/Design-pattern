@@ -28,7 +28,7 @@
 
 行为型模式关注对象之间的通信。
 
-- [责任链模式（Chain of Responsibility）](./ '责任链模式（Chain of Responsibility）')
+- [责任链模式（Chain of Responsibility）](./behavior-responsibility-pattern '责任链模式（Chain of Responsibility）')
 - [命令模式（Command）](./ '命令模式（Command）')
 - [解释器模式（Interpreter）](./ '解释器模式（Interpreter）')
 - [迭代器模式（Iterator）](./ '迭代器模式（Iterator）')

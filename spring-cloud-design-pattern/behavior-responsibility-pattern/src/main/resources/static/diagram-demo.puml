@@ -1,0 +1,50 @@
+@startuml
+
+Approver o-- Approver
+Client *-- Approver
+
+abstract class Approver {
+  -Approver next
+  #String name
+
+  +Approver(String name)
+  +void setNext(Approver next)
+  +Approver getNext()
+  +abstract void process(int leaveDays)
+}
+
+class ClassApprover extends Approver {
+  +ClassApprover(String name)
+  +void process(int leaveDays)
+}
+
+class DepartmentApprover extends Approver {
+  +DepartmentApprover(String name)
+  +void process(int leaveDays)
+}
+
+class CollegeApprover extends Approver {
+  +CollegeApprover(String name)
+  +void process(int leaveDays)
+}
+
+class Client {
+  +void method()
+}
+
+note as N
+    public void method()
+    {
+        Approver classApprover = new ClassApprover("班主任");
+        Approver departmentApprover = new DepartmentApprover("系主任");
+        Approver collegeApprover = new CollegeApprover("院长");
+        classApprover.setNext(departmentApprover);
+        departmentApprover.setNext(collegeApprover);
+
+        classApprover.process(18);
+    }
+end note
+
+Client .. N
+
+@enduml

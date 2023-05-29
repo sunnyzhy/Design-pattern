@@ -1,0 +1,46 @@
+@startuml
+
+Handler o-- Handler
+Client *-- Handler
+
+abstract class Handler {
+  -Handler next
+
+  +void setNext(Handler next)
+  +Handler getNext()
+  +abstract void handleRequest(String request)
+}
+
+class ConcreteHandlerA extends Handler {
+  -Handler next
+
+  +void setNext(Handler next)
+  +Handler getNext()
+  +void handleRequest(String request)
+}
+
+class ConcreteHandlerB extends Handler {
+  -Handler next
+
+  +void setNext(Handler next)
+  +Handler getNext()
+  +void handleRequest(String request)
+}
+
+class Client {
+  +void method()
+}
+
+note as N
+    public void method()
+    {
+        Handler handlerA = new ConcreteHandlerA();
+        Handler handlerB = new ConcreteHandlerB();
+        handlerA.setNext(handlerB);
+        handlerA.handleRequest("m");
+    }
+end note
+
+Client .. N
+
+@enduml
