@@ -1,8 +1,8 @@
-# 享元模式（Flyweight）
+# 享元模式（Flyweight Pattern）
 
 ## 定义
 
-享元模式（Flyweight）又称为轻量级模式，是对象池的一种实现。类似于线程池，线程池可以避免不停地创建和销毁对象，消耗性能。提供了减少对象数量从而改善应用所需的对象结构的方式。其宗旨是共享细粒度对象，将多个对同一对象的访问集中起来，不必为每个访问者创建一个单独的对象，从此来降低内存的消耗。
+享元模式（Flyweight Pattern）又称为轻量级模式，是对象池的一种实现。类似于线程池，线程池可以避免不停地创建和销毁对象，消耗性能。提供了减少对象数量从而改善应用所需的对象结构的方式。其宗旨是共享细粒度对象，将多个对同一对象的访问集中起来，不必为每个访问者创建一个单独的对象，从此来降低内存的消耗。
 
 总之，享元模式运用共享技术来有效地支持大量细粒度对象的复用。它通过共享已经存在的对象来大幅度减少需要创建的对象数量、避免大量相似类的开销，从而提高系统资源的利用率。
 
@@ -24,11 +24,11 @@
 
 ### 类图
 
-![享元模式（Flyweight）](src/main/resources/static/diagram.png '享元模式（Flyweight）')
+![享元模式（Flyweight Pattern）](src/main/resources/static/diagram.png '享元模式（Flyweight Pattern）')
 
 ### 示例
 
-![享元模式（Flyweight）](src/main/resources/static/diagram-demo.png '享元模式（Flyweight）')
+![享元模式（Flyweight Pattern）](src/main/resources/static/diagram-demo.png '享元模式（Flyweight Pattern）')
 
 总结:
 

@@ -1,8 +1,8 @@
-# 原型模式（Prototype）
+# 原型模式（Prototype Pattern）
 
 ## 定义
 
-原型（Prototype）模式用一个已经创建的实例作为原型，通过复制该原型对象来创建一个和原型相同或相似的新对象。
+原型模式（Prototype Pattern）用一个已经创建的实例作为原型，通过复制该原型对象来创建一个和原型相同或相似的新对象。
 
 ## 角色
 
@@ -14,11 +14,11 @@
 
 ### 类图
 
-![原型模式（Prototype）](src/main/resources/static/diagram.png '原型模式（Prototype）')
+![原型模式（Prototype Pattern）](src/main/resources/static/diagram.png '原型模式（Prototype Pattern）')
 
 ### 示例
 
-![原型模式（Prototype）](src/main/resources/static/diagram-demo.png '原型模式（Prototype）')
+![原型模式（Prototype Pattern）](src/main/resources/static/diagram-demo.png '原型模式（Prototype Pattern）')
 
 ## 分类
 

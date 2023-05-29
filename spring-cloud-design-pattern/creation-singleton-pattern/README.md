@@ -1,8 +1,8 @@
-# 单例模式（Singleton）
+# 单例模式（Singleton Pattern）
 
 ## 定义
 
-单例（Singleton）模式指一个类只有一个实例，且该类能自行创建这个实例的一种模式。
+单例模式（Singleton Pattern）指一个类只有一个实例，且该类能自行创建这个实例的一种模式。
 
 单例模式的特点：
 
@@ -17,7 +17,7 @@
 
 ## 类图
 
-![单例模式（Singleton）](src/main/resources/static/diagram.png '单例模式（Singleton）')
+![单例模式（Singleton Pattern）](src/main/resources/static/diagram.png '单例模式（Singleton Pattern）')
 
 ## 总结
 

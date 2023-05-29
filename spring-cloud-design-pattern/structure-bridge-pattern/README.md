@@ -1,8 +1,8 @@
-# 桥接模式（Bridge）
+# 桥接模式（Bridge Pattern）
 
 ## 定义
 
-桥接模式（Bridge）将抽象部分与它的实现部分分离，使它们都可以独立地变化。它是用***组合***关系代替继承关系来实现，从而降低了抽象和实现这两个可变维度的耦合度。
+桥接模式（Bridge Pattern）将抽象部分与它的实现部分分离，使它们都可以独立地变化。它是用***组合***关系代替继承关系来实现，从而降低了抽象和实现这两个可变维度的耦合度。
 
 ## 角色
 
@@ -15,11 +15,11 @@
 
 ### 类图
 
-![桥接模式（Bridge）](src/main/resources/static/diagram.png '桥接模式（Bridge）')
+![桥接模式（Bridge Pattern）](src/main/resources/static/diagram.png '桥接模式（Bridge Pattern）')
 
 ### 示例
 
-![桥接模式（Bridge）](src/main/resources/static/diagram-demo.png '桥接模式（Bridge）')
+![桥接模式（Bridge Pattern）](src/main/resources/static/diagram-demo.png '桥接模式（Bridge Pattern）')
 
 问题:
 

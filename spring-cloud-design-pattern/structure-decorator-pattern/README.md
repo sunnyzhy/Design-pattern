@@ -1,8 +1,8 @@
-# 装饰器模式（Decorator）
+# 装饰器模式（Decorator Pattern）
 
 ## 定义
 
-装饰器模式（Decorator）允许向一个现有的对象添加新的功能，同时又不改变其结构。这种模式创建了一个装饰类，用来包装原有的类，并在保持类方法签名完整性的前提下，提供了额外的功能。
+装饰器模式（Decorator Pattern）允许向一个现有的对象添加新的功能，同时又不改变其结构。这种模式创建了一个装饰类，用来包装原有的类，并在保持类方法签名完整性的前提下，提供了额外的功能。
 
 ## 角色
 
@@ -15,11 +15,11 @@
 
 ### 类图
 
-![装饰器模式（Decorator）](src/main/resources/static/diagram.png '装饰器模式（Decorator）')
+![装饰器模式（Decorator Pattern）](src/main/resources/static/diagram.png '装饰器模式（Decorator Pattern）')
 
 ### 示例
 
-![装饰器模式（Decorator）](src/main/resources/static/diagram-demo.png '装饰器模式（Decorator）')
+![装饰器模式（Decorator Pattern）](src/main/resources/static/diagram-demo.png '装饰器模式（Decorator Pattern）')
 
 总结:
 

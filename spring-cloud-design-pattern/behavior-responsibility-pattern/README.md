@@ -1,8 +1,8 @@
-# 责任链模式（Chain of Responsibility）
+# 责任链模式（Chain of Responsibility Pattern）
 
 ## 定义
 
-责任链模式（Chain of Responsibility），也叫职责链模式，为了避免请求发送者与多个请求处理者耦合在一起，将所有请求的处理者通过前一个对象记住其下一个对象的引用而连成一条链；当有请求发生时，可将请求沿着这条链传递，直到有对象处理它为止。
+责任链模式（Chain of Responsibility Pattern），也叫职责链模式，为了避免请求发送者与多个请求处理者耦合在一起，将所有请求的处理者通过前一个对象记住其下一个对象的引用而连成一条链；当有请求发生时，可将请求沿着这条链传递，直到有对象处理它为止。
 
 ## 角色
 
@@ -14,8 +14,8 @@
 
 ### 类图
 
-![责任链模式（Chain of Responsibility）](src/main/resources/static/diagram.png '责任链模式（Chain of Responsibility）')
+![责任链模式（Chain of Responsibility Pattern）](src/main/resources/static/diagram.png '责任链模式（Chain of Responsibility Pattern）')
 
 ### 示例
 
-![责任链模式（Chain of Responsibility）](src/main/resources/static/diagram-demo.png '责任链模式（Chain of Responsibility）')
+![责任链模式（Chain of Responsibility Pattern）](src/main/resources/static/diagram-demo.png '责任链模式（Chain of Responsibility Pattern）')

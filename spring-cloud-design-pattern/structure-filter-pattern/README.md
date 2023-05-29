@@ -1,8 +1,8 @@
-# 过滤器模式（Filter）
+# 过滤器模式（Filter/Criteria Pattern）
 
 ## 定义
 
-过滤器模式（Filter）又称为标准模式（Criteria），允许开发人员使用不同的标准来过滤一组对象，通过逻辑运算以解耦的方式把它们连接起来。这种类型的设计模式属于结构型模式，它结合多个标准来获得单一标准。
+过滤器模式（Filter/Criteria Pattern）又称为标准模式（Criteria），允许开发人员使用不同的标准来过滤一组对象，通过逻辑运算以解耦的方式把它们连接起来。这种类型的设计模式属于结构型模式，它结合多个标准来获得单一标准。
 
 ## 角色
 
@@ -14,8 +14,8 @@
 
 ### 类图
 
-![过滤器模式（Filter）](src/main/resources/static/diagram.png '过滤器模式（Filter）')
+![过滤器模式（Filter/Criteria Pattern）](src/main/resources/static/diagram.png '过滤器模式（Filter/Criteria Pattern）')
 
 ### 示例
 
-![过滤器模式（Filter）](src/main/resources/static/diagram-demo.png '过滤器模式（Filter）')
+![过滤器模式（Filter/Criteria Pattern）](src/main/resources/static/diagram-demo.png '过滤器模式（Filter/Criteria Pattern）')

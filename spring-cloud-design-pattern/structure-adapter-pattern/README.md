@@ -1,8 +1,8 @@
-# 适配器模式（Adapter）
+# 适配器模式（Adapter Pattern）
 
 ## 定义
 
-适配器模式（Adapter）将一个类的接口转换成客户希望的另外一个接口，使得原本由于接口不兼容而不能一起工作的那些类能一起工作。适配器模式分为类适配器模式和对象适配器模式。
+适配器模式（Adapter Pattern）将一个类的接口转换成客户希望的另外一个接口，使得原本由于接口不兼容而不能一起工作的那些类能一起工作。适配器模式分为类适配器模式和对象适配器模式。
 
 - 类适配器模式：通过继承实现，即 Adapter 类会继承 Adaptee类： ```Adapter extends Adaptee implements Target``` ，因为其不满足迪米特法则，Adapter 对象除了可以访问到 Target 对象的方法，还可以访问到 Adaptee 对象的方法，所以一般不推荐。
 - 对象适配器模式：通过关联实现，即 Adapter 类会关联 Adaptee 类， 这样一来，Adapter 对象只能访问到 Target 对象的方法，推荐。
@@ -17,11 +17,11 @@
 
 ### 类图
 
-![适配器模式（Adapter）](src/main/resources/static/diagram.png '适配器模式（Adapter）')
+![适配器模式（Adapter Pattern）](src/main/resources/static/diagram.png '适配器模式（Adapter Pattern）')
 
 ### 示例
 
-![适配器模式（Adapter）](src/main/resources/static/diagram-demo.png '适配器模式（Adapter）')
+![适配器模式（Adapter Pattern）](src/main/resources/static/diagram-demo.png '适配器模式（Adapter Pattern）')
 
 总结:
 
