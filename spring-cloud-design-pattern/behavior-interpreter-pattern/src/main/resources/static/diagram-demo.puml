@@ -1,0 +1,35 @@
+@startuml
+
+Context o-- AbstractExpression
+PlusExpression o-- AbstractExpression
+
+interface AbstractExpression {
+  +int interpreter(Context)
+  +String toString()
+}
+
+class VariableExpression implements AbstractExpression {
+  -String name
+
+  +VariableExpression(String name)
+  +int interpreter(Context)
+  +String toString()
+}
+
+class PlusExpression implements AbstractExpression {
+  -final AbstractExpression leftExpression
+  -final AbstractExpression rightExpression
+
+  +PlusExpression(AbstractExpression leftExpression, AbstractExpression rightExpression)
+  +int interpreter(Context)
+  +String toString()
+}
+
+class Context {
+  -Map<AbstractExpression, Integer> contextMap
+
+  +void addExp(AbstractExpression exp, Integer value)
+  +Integer lookup(AbstractExpression exp)
+}
+
+@enduml

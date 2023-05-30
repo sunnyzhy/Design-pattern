@@ -22,6 +22,7 @@
         <module name="creation-abstract-factory-pattern" />
         <module name="structure-proxy-pattern" />
         <module name="behavior-responsibility-pattern" />
+        <module name="behavior-interpreter-pattern" />
         <module name="behavior-command-pattern" />
         <module name="structure-filter-pattern" />
       </profile>
@@ -33,6 +34,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="behavior-command-pattern" options="-parameters" />
+      <module name="behavior-interpreter-pattern" options="-parameters" />
       <module name="behavior-observer-pattern" options="-parameters" />
       <module name="behavior-responsibility-pattern" options="-parameters" />
       <module name="creation-abstract-factory-pattern" options="-parameters" />

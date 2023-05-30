@@ -1,0 +1,29 @@
+@startuml
+
+Context o-- AbstractExpression
+NonterminalExpression o-- AbstractExpression
+
+interface AbstractExpression {
+  +Object interpret(Context)
+}
+
+class TerminalExpression implements AbstractExpression {
+  +Object interpret(Context)
+}
+
+class NonterminalExpression implements AbstractExpression {
+  -AbstractExpression exp1
+  -AbstractExpression exp1
+
+  +NonterminalExpression(AbstractExpression exp1, AbstractExpression exp1)
+  +Object interpret(Context context)
+}
+
+class Context {
+  -AbstractExpression exp
+  
+  +setExpression(AbstractExpression exp)
+  +Object getValue(AbstractExpression exp)
+}
+
+@enduml

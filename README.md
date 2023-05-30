@@ -41,7 +41,7 @@
 
 - [责任链模式（Chain of Responsibility Pattern）](./spring-cloud-design-pattern/behavior-responsibility-pattern '责任链模式（Chain of Responsibility Pattern）')
 - [命令模式（Command Pattern）](./spring-cloud-design-pattern/behavior-command-pattern '命令模式（Command Pattern）')
-- [解释器模式（Interpreter Pattern）](./spring-cloud-design-pattern/ '解释器模式（Interpreter Pattern）')
+- [解释器模式（Interpreter Pattern）](./spring-cloud-design-pattern/behavior-interpreter-pattern '解释器模式（Interpreter Pattern）')
 - [迭代器模式（Iterator Pattern）](./spring-cloud-design-pattern/ '迭代器模式（Iterator Pattern）')
 - [中介者模式（Mediator Pattern）](./spring-cloud-design-pattern/ '中介者模式（Mediator Pattern）')
 - [备忘录模式（Memento Pattern）](./spring-cloud-design-pattern/ '备忘录模式（Memento Pattern）')

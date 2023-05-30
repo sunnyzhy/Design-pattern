@@ -22,6 +22,7 @@
         <module>behavior-observer-pattern</module>
         <module>behavior-responsibility-pattern</module>
         <module>behavior-command-pattern</module>
+        <module>behavior-interpreter-pattern</module>
     </modules>
 
     <parent>

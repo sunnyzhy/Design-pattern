@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class BehaviorCommandPatternApp
+public class CommandPatternApp
 {
     public static void main( String[] args )
     {
-        SpringApplication.run(BehaviorCommandPatternApp.class, args);
+        SpringApplication.run(CommandPatternApp.class, args);
     }
 }
