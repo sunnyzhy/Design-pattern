@@ -32,4 +32,12 @@ class Context {
   +Integer lookup(AbstractExpression exp)
 }
 
+note as N
+    public int interpreter(Context) {
+        return leftExpression.interpreter(context) + rightExpression.interpreter(context);
+    }
+end note
+
+PlusExpression .. N
+
 @enduml

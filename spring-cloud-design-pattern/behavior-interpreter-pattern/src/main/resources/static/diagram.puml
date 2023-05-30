@@ -13,9 +13,9 @@ class TerminalExpression implements AbstractExpression {
 
 class NonterminalExpression implements AbstractExpression {
   -AbstractExpression exp1
-  -AbstractExpression exp1
+  -AbstractExpression exp2
 
-  +NonterminalExpression(AbstractExpression exp1, AbstractExpression exp1)
+  +NonterminalExpression(AbstractExpression exp1, AbstractExpression exp2)
   +Object interpret(Context context)
 }
 
@@ -25,5 +25,13 @@ class Context {
   +setExpression(AbstractExpression exp)
   +Object getValue(AbstractExpression exp)
 }
+
+note as N
+    public Object interpret(Context context) {
+        return exp1.interpreter(context);
+    }
+end note
+
+NonterminalExpression .. N
 
 @enduml
