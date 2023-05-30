@@ -1,0 +1,56 @@
+@startuml
+
+ConcreteCommandA o-- Receiver
+ConcreteCommandB o-- Receiver
+Invoker o-- Command
+
+interface Command {
+  +void execute()
+}
+
+class ConcreteCommandA implements Command {
+  -Receiver receiver
+
+  +ConcreteCommandA(Receiver)
+  +void execute()
+}
+
+class ConcreteCommandB implements Command {
+  -Receiver receiver
+
+  +ConcreteCommandB(Receiver)
+  +void execute()
+}
+
+class Receiver {
+  +void action()
+}
+
+class Invoker {
+  -Command command
+
+  +Invoker(Command)
+  +void setCommand(Command)
+  +void call()
+}
+
+note as N
+    public void execute()
+    {
+        receiver.action();
+    }
+end note
+
+note as M
+    public void call()
+    {
+        command.execute();
+    }
+end note
+
+ConcreteCommandA .. N
+ConcreteCommandB .. N
+
+Invoker .. M
+
+@enduml

@@ -1,6 +1,5 @@
 package org.springframework.cloud.pattern.subject;
 
-import org.springframework.cloud.pattern.observer.Baby;
 import org.springframework.cloud.pattern.observer.Observer;
 
 import java.util.ArrayList;
@@ -11,14 +10,14 @@ import java.util.List;
  * @date 2023/5/26 14:58
  */
 public class Cat implements Observer, Subject {
-    private STATE state;
+    private STATUS status;
 
     private List<Observer> observerList;
 
     public Cat() {
-        this.state = STATE.SLEEP;
+        this.status = STATUS.SLEEP;
         this.observerList = new ArrayList<>();
-        System.out.println(this.state.name);
+        System.out.println(this.status.name);
     }
 
     @Override
@@ -40,18 +39,18 @@ public class Cat implements Observer, Subject {
 
     @Override
     public void update(String message) {
-        this.state = STATE.MEW;
-        System.out.println(message + " ---> " + this.state.name);
-        notify(this.state.name);
+        this.status = STATUS.MEW;
+        System.out.println(message + " ---> " + this.status.name);
+        notify(this.status.name);
     }
 
-    enum STATE {
+    enum STATUS {
         SLEEP("猫在睡觉"),
         MEW("猫：喵呜");
 
         private String name;
 
-        STATE(String name) {
+        STATUS(String name) {
             this.name = name;
         }
     }

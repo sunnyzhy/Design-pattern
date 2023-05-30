@@ -21,6 +21,7 @@
         <module>structure-proxy-pattern</module>
         <module>behavior-observer-pattern</module>
         <module>behavior-responsibility-pattern</module>
+        <module>behavior-command-pattern</module>
     </modules>
 
     <parent>

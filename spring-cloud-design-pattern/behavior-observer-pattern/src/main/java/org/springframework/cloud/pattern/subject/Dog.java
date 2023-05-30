@@ -10,14 +10,14 @@ import java.util.List;
  * @date 2023/5/26 14:58
  */
 public class Dog implements Observer, Subject {
-    private STATE state;
+    private STATUS status;
 
     private List<Observer> observerList;
 
     public Dog() {
-        this.state = STATE.SLEEP;
+        this.status = STATUS.SLEEP;
         this.observerList = new ArrayList<>();
-        System.out.println(this.state.name);
+        System.out.println(this.status.name);
     }
 
     @Override
@@ -39,18 +39,18 @@ public class Dog implements Observer, Subject {
 
     @Override
     public void update(String message) {
-        this.state = STATE.WOOF;
-        System.out.println(message + " ---> " + this.state.name);
-        notify(this.state.name);
+        this.status = STATUS.WOOF;
+        System.out.println(message + " ---> " + this.status.name);
+        notify(this.status.name);
     }
 
-    enum STATE {
+    enum STATUS {
         SLEEP("狗在睡觉"),
         WOOF("狗：汪汪");
 
         private String name;
 
-        STATE(String name) {
+        STATUS(String name) {
             this.name = name;
         }
     }
