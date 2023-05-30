@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/behavior-command-pattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/behavior-interpreter-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/behavior-iterator-pattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/behavior-observer-pattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/behavior-responsibility-pattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/creation-abstract-factory-pattern/src/main/java" charset="UTF-8" />

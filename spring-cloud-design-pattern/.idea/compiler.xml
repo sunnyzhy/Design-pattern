@@ -12,6 +12,7 @@
         <module name="creation-singleton-pattern" />
         <module name="creation-factory-method-pattern" />
         <module name="creation-prototype-pattern" />
+        <module name="behavior-iterator-pattern" />
         <module name="structure-decorator-pattern" />
         <module name="structure-flyweight-pattern" />
         <module name="behavior-observer-pattern" />
@@ -35,6 +36,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="behavior-command-pattern" options="-parameters" />
       <module name="behavior-interpreter-pattern" options="-parameters" />
+      <module name="behavior-iterator-pattern" options="-parameters" />
       <module name="behavior-observer-pattern" options="-parameters" />
       <module name="behavior-responsibility-pattern" options="-parameters" />
       <module name="creation-abstract-factory-pattern" options="-parameters" />

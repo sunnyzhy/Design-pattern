@@ -1,0 +1,42 @@
+@startuml
+
+Aggregate *-- Iterator
+
+interface Aggregate<T> {
+  +void add(T)
+  +void remove(T)
+  +Iterator<T> getIterator()
+}
+
+class ConcreteAggregate<T> implements Aggregate {
+  -List<T> list
+
+  +void add(T)
+  +void remove(T)
+  +Iterator<T> getIterator()
+}
+
+interface Iterator<T> {
+  +T first()
+  +T next()
+  +boolean hasNext()
+}
+
+class ConcreteIterator<T> implements Iterator {
+  -List<T> list
+
+  +ConcreteIterator(List<T> list)
+  +T first()
+  +T next()
+  +boolean hasNext()
+}
+
+note as N
+    public Iterator<T> getIterator() {
+        return new ConcreteIterator<>(list);
+    }
+end note
+
+ConcreteAggregate .. N
+
+@enduml

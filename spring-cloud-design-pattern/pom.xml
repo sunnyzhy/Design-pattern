@@ -23,6 +23,7 @@
         <module>behavior-responsibility-pattern</module>
         <module>behavior-command-pattern</module>
         <module>behavior-interpreter-pattern</module>
+        <module>behavior-iterator-pattern</module>
     </modules>
 
     <parent>
