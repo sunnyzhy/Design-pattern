@@ -1,0 +1,55 @@
+@startuml
+
+ChatColleague o-- ChatMediator
+ChatServer o-- ChatColleague
+
+interface ChatMediator {
+  +void register(ChatColleague client)
+  +void relay(ChatColleague client, String message)
+}
+
+class ChatServer implements ChatMediator {
+  -List<ChatColleague> clientList
+
+  +void register(ChatColleague client)
+  +void relay(ChatColleague client, String message)
+}
+
+abstract class ChatColleague {
+  #ChatMediator
+  #String name
+
+  +ChatColleague(String name)
+  +void setMedium(Mediator)
+  +abstract void receive(String message)
+  +abstract void send(String message)
+}
+
+class ChatClient extends ChatColleague {
+  +ChatClient(String name)
+  +void receive(String message)
+  +void send(String message)
+}
+
+note as N
+    public void send(String message) {
+        System.out.println(this.name + " 发送一条消息：" + message);
+        this.chatMediator.relay(this, message);
+    }
+end note
+
+note as M
+    public void relay(ChatColleague client, String message) {
+        for (ChatColleague c : clientList) {
+            if (!client.equals(c)) {
+                c.receive(message);
+            }
+        }
+    }
+end note
+
+ChatClient .. N
+
+ChatServer .. M
+
+@enduml

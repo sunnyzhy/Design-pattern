@@ -18,6 +18,7 @@
         <module name="behavior-observer-pattern" />
         <module name="structure-bridge-pattern" />
         <module name="structure-composite-pattern" />
+        <module name="behavior-mediator-pattern" />
         <module name="creation-simple-factory-pattern" />
         <module name="creation-builder-pattern" />
         <module name="creation-abstract-factory-pattern" />
@@ -37,6 +38,7 @@
       <module name="behavior-command-pattern" options="-parameters" />
       <module name="behavior-interpreter-pattern" options="-parameters" />
       <module name="behavior-iterator-pattern" options="-parameters" />
+      <module name="behavior-mediator-pattern" options="-parameters" />
       <module name="behavior-observer-pattern" options="-parameters" />
       <module name="behavior-responsibility-pattern" options="-parameters" />
       <module name="creation-abstract-factory-pattern" options="-parameters" />

@@ -1,0 +1,57 @@
+@startuml
+
+Colleague o-- Mediator
+ConcreteMediator o-- Colleague
+
+interface Mediator {
+  +void register(Colleague)
+  +void relay(Colleague)
+}
+
+class ConcreteMediator implements Mediator {
+  -List<Colleague> colleagues
+
+  +void register(Colleague)
+  +void relay(Colleague)
+}
+
+abstract class Colleague {
+  #Mediator
+
+  +void setMedium(Mediator)
+  +abstract void receive()
+  +abstract void send()
+}
+
+class ConcreteColleagueA extends Colleague {
+  +void receive()
+  +void send()
+}
+
+class ConcreteColleagueB extends Colleague {
+  +void receive()
+  +void send()
+}
+
+note as N
+    public void send() {
+        mediator.relay(this);
+    }
+end note
+
+note as M
+    public void relay(Colleague cl) {
+        for (Colleague ob : colleagues) {
+            if (!ob.equals(cl))  {
+                ob.receive();
+            }
+        }
+    }
+end note
+
+ConcreteColleagueA .. N
+ConcreteColleagueB .. N
+
+ConcreteMediator .. M
+
+@enduml

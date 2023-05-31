@@ -24,6 +24,7 @@
         <module>behavior-command-pattern</module>
         <module>behavior-interpreter-pattern</module>
         <module>behavior-iterator-pattern</module>
+        <module>behavior-mediator-pattern</module>
     </modules>
 
     <parent>
