@@ -32,7 +32,7 @@
 - [命令模式（Command Pattern）](./behavior-command-pattern '命令模式（Command Pattern）')
 - [解释器模式（Interpreter Pattern）](./behavior-interpreter-pattern '解释器模式（Interpreter Pattern）')
 - [迭代器模式（Iterator Pattern）](./behavior-iterator-pattern '迭代器模式（Iterator Pattern）')
-- [中介者模式（Mediator Pattern）](./ '中介者模式（Mediator Pattern）')
+- [中介者模式（Mediator Pattern）](./behavior-mediator-pattern '中介者模式（Mediator Pattern）')
 - [备忘录模式（Memento Pattern）](./ '备忘录模式（Memento Pattern）')
 - [观察者模式（Observer Pattern）](./behavior-observer-pattern '观察者模式（Observer Pattern）')
 - [状态模式（State Pattern）](./ '状态模式（State Pattern）')
