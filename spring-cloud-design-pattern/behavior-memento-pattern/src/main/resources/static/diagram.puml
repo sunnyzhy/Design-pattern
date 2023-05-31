@@ -1,0 +1,47 @@
+@startuml
+
+Originator *-- Memento
+Caretaker o-- Memento
+
+class Memento {
+  -String state
+
+  +Memento(String state)
+  +void setState(String state)
+  +String getState()
+}
+
+class Originator {
+  -String state
+
+  +void setState(String state)
+  +String getState()
+  +Memento createMemento()
+  +void restoreMemento(Memento m)
+}
+
+class Caretaker {
+  -Memento memento
+
+  +void setMemento(Memento m)
+  +Memento getMemento()
+}
+
+note as N
+    public Memento createMemento()
+    {
+        return new Memento(state);
+    }
+end note
+
+note as M
+    public void restoreMemento(Memento m)
+    {
+        this.setState(m.getState());
+    }
+end note
+
+Originator .. N
+Originator .. M
+
+@enduml

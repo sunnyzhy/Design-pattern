@@ -5,26 +5,26 @@ package org.springframework.cloud.pattern.observer;
  * @date 2023/5/26 14:58
  */
 public class Baby implements Observer {
-    private STATUS status;
+    private STATE state;
 
     public Baby() {
-        this.status = STATUS.SLEEP;
-        System.out.println(this.status.name);
+        this.state = STATE.SLEEP;
+        System.out.println(this.state.name);
     }
 
     @Override
     public void update(String message) {
-        this.status = STATUS.CRY;
-        System.out.println(message + " ---> " + this.status.name);
+        this.state = STATE.CRY;
+        System.out.println(message + " ---> " + this.state.name);
     }
 
-    enum STATUS {
+    enum STATE {
         SLEEP("婴儿在睡觉"),
         CRY("婴儿哭");
 
         private String name;
 
-        STATUS(String name) {
+        STATE(String name) {
             this.name = name;
         }
     }

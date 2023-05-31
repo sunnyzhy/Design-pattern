@@ -1,0 +1,56 @@
+@startuml
+
+RoleState *-- RoleStateMemento
+RoleStateCaretaker o-- RoleStateMemento
+RoleStateMemento o-- Location
+RoleState o-- Location
+
+class RoleStateMemento {
+  -Location location
+
+  +RoleStateMemento(Location location)
+  +void setLocation(Location location)
+  +Location getLocation()
+}
+
+class RoleState {
+  -Location location
+
+  +Location getLocation()
+  +void setLocation(Location location)
+  +RoleStateMemento createMemento()
+  +void restoreMemento(RoleStateMemento memento)
+}
+
+class RoleStateCaretaker {
+  -List<RoleStateMemento> mementoList
+
+  +RoleStateMemento getMemento(int index)
+  +void addMemento(RoleStateMemento memento)
+}
+
+class Location {
+  -int x
+  -int y
+
+  +Location(int x, int y)
+  +int getX()
+  +int getY()
+}
+
+note as N
+    public RoleStateMemento createMemento() {
+        return new RoleStateMemento(this.location);
+    }
+end note
+
+note as M
+    public void restoreMemento(RoleStateMemento memento) {
+        this.setLocation(memento.getLocation());
+    }
+end note
+
+RoleState .. N
+RoleState .. M
+
+@enduml
