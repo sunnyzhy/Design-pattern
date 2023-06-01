@@ -1,0 +1,56 @@
+@startuml
+
+Context o-- State
+
+class Context {
+  -State state
+
+  +Context()
+  +void setState(State)
+  +State getState()
+  +void handle()
+}
+
+abstract class State {
+  +abstract void handle(Context)
+}
+
+class ConcreteStateA extends State {
+  +void handle(Context)
+}
+
+class ConcreteStateB extends State {
+  +void handle(Context)
+}
+
+note as N
+    public Context()
+    {
+        state = new ConcreteStateA();
+    }
+
+    public void handle()
+    {
+        state.handle(this);
+    }
+end note
+
+note as M
+    public void handle(Context)
+    {
+        context.setState(new ConcreteStateB());
+    }
+end note
+
+note as L
+    public void handle(Context)
+    {
+        context.setState(new ConcreteStateA());
+    }
+end note
+
+Context .. N
+ConcreteStateA .. M
+ConcreteStateB .. L
+
+@enduml

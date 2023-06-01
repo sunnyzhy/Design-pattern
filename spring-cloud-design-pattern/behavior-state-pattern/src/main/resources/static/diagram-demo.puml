@@ -1,0 +1,82 @@
+@startuml
+
+CreateCommand o-- Order
+PayCommand o-- Order
+CancelCommand o-- Order
+Processor o-- Command
+
+class Order {
+  -String id
+  -STATUS status
+
+  +void create()
+  +void pay()
+  +void cancel()
+}
+
+interface Command {
+  +void execute()
+}
+
+class CreateCommand implements Command {
+  -Order o
+
+  +CreateCommand(Order o)
+  +void execute()
+}
+
+class PayCommand implements Command {
+  -Order o
+
+  +PayCommand(Order o)
+  +void execute()
+}
+
+class CancelCommand implements Command {
+  -Order o
+
+  +CancelCommand(Order o)
+  +void execute()
+}
+
+class Processor {
+  -List<Command> commandList
+
+  +void addCommand(Command)
+  +void process()
+}
+
+note as CREATE
+    public void execute() {
+        this.o.create();
+    }
+end note
+
+note as PAY
+    public void execute() {
+        this.o.pay();
+    }
+end note
+
+note as CANCEL
+    public void execute() {
+        this.o.cancel();
+    }
+end note
+
+note as N
+    public void process() {
+        for (Command command : commandList) {
+            command.execute();
+        }
+        commandList.clear();
+    }
+end note
+
+CreateCommand .. CREATE
+PayCommand .. PAY
+CancelCommand .. CANCEL
+
+Processor .. N
+
+@enduml
