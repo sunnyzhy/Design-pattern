@@ -1,0 +1,36 @@
+@startuml
+
+Context o-- Sale
+
+interface Sale {
+  +double pay(double price)
+}
+
+class SaleNormal implements Sale {
+  +double pay(double price)
+}
+
+class SaleRebate implements Sale {
+  -double rebate
+
+  +SaleRebate(double rebate)
+  +double pay(double price)
+}
+
+class SaleDiscount implements Sale {
+  -double condition
+  -double discount
+
+  +SaleDiscount(double condition, double discount)
+  +double pay(double price)
+}
+
+class Context {
+  -Sale sale
+
+  +Sale getSale()
+  +void setSale(Sale sale)
+  +double pay(double price)
+}
+
+@enduml

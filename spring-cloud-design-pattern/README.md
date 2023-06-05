@@ -36,6 +36,6 @@
 - [备忘录模式（Memento Pattern）](./behavior-memento-pattern '备忘录模式（Memento Pattern）')
 - [观察者模式（Observer Pattern）](./behavior-observer-pattern '观察者模式（Observer Pattern）')
 - [状态模式（State Pattern）](./behavior-state-pattern '状态模式（State Pattern）')
-- [策略模式（Strategy Pattern）](./ '策略模式（Strategy Pattern）')
+- [策略模式（Strategy Pattern）](./behavior-strategy-pattern '策略模式（Strategy Pattern）')
 - [模板模式（Template Pattern）](./ '模板模式（Template Pattern）')
 - [访问者模式（Visitor Pattern）](./ '访问者模式（Visitor Pattern）')

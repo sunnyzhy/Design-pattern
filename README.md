@@ -47,6 +47,6 @@
 - [备忘录模式（Memento Pattern）](./spring-cloud-design-pattern/behavior-memento-pattern '备忘录模式（Memento Pattern）')
 - [观察者模式（Observer Pattern）](./spring-cloud-design-pattern/behavior-observer-pattern '观察者模式（Observer Pattern）')
 - [状态模式（State Pattern）](./spring-cloud-design-pattern/behavior-state-pattern '状态模式（State Pattern）')
-- [策略模式（Strategy Pattern）](./spring-cloud-design-pattern/ '策略模式（Strategy Pattern）')
+- [策略模式（Strategy Pattern）](./spring-cloud-design-pattern/behavior-strategy-pattern '策略模式（Strategy Pattern）')
 - [模板模式（Template Pattern）](./spring-cloud-design-pattern/ '模板模式（Template Pattern）')
 - [访问者模式（Visitor Pattern）](./spring-cloud-design-pattern/ '访问者模式（Visitor Pattern）')

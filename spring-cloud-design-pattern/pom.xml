@@ -27,6 +27,7 @@
         <module>behavior-mediator-pattern</module>
         <module>behavior-memento-pattern</module>
         <module>behavior-state-pattern</module>
+        <module>behavior-strategy-pattern</module>
     </modules>
 
     <parent>

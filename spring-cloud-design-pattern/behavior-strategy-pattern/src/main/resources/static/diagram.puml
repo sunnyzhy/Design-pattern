@@ -1,0 +1,25 @@
+@startuml
+
+Context o-- Strategy
+
+interface Strategy {
+  +void method()
+}
+
+class ConcreteStrategyA implements Strategy {
+  +void method()
+}
+
+class ConcreteStrategyB implements Strategy {
+  +void method()
+}
+
+class Context {
+  -Strategy strategy
+
+  +Strategy getStrategy()
+  +void setStrategy(Strategy)
+  +void method()
+}
+
+@enduml
