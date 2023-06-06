@@ -1,0 +1,27 @@
+@startuml
+
+abstract class Compute {
+  +void duration()
+  +abstract long calculate()
+}
+
+class MultiplyCompute extends Compute {
+  +long calculate()
+}
+
+class PlusCompute extends Compute {
+  +long calculate()
+}
+
+note as N
+    public void duration() {
+        long start = System.currentTimeMillis();
+        calculate();
+        long end = System.currentTimeMillis();
+        System.out.println("任务执行的时间： " + (end - start) + "毫秒");
+    }
+end note
+
+Compute .. N
+
+@enduml

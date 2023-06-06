@@ -1,0 +1,27 @@
+@startuml
+
+abstract class AbstractTemplate {
+  +void templateMethod()
+  +abstract void abstractMethod()
+  +void concreteMethod()
+  +void hookMethod()
+}
+
+class ConcreteTemplate extends AbstractTemplate {
+  +void abstractMethod()
+  +void concreteMethod()
+  +void hookMethod()
+}
+
+note as N
+    public void templateMethod()
+    {
+        abstractMethod();
+        concreteMethod();
+        hookMethod();
+    }
+end note
+
+AbstractTemplate .. N
+
+@enduml
