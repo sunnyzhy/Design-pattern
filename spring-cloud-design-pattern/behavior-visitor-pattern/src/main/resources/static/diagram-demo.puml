@@ -1,0 +1,68 @@
+@startuml
+
+Visitor o-- Engineer
+Visitor o-- Manager
+Employee o-- Visitor
+BusinessReport o-- Employee
+BusinessReport o-- Visitor
+
+interface Visitor {
+  +void visit(Engineer)
+  +void visit(Manager)
+}
+
+class CtoVisitor implements Visitor {
+  +void visit(Engineer)
+  +void visit(Manager)
+}
+
+class CeoVisitor implements Visitor {
+  +void visit(Engineer)
+  +void visit(Manager)
+}
+
+abstract class Employee {
+  -String name
+  -int kpi
+
+  +Employee(String name)
+  +String getName()
+  +int getKpi()
+  +abstract void accept(Visitor)
+}
+
+class Engineer extends Employee {
+  -String name
+
+  +Engineer(String name)
+  +void accept(Visitor)
+  +int getCodeLines()
+}
+
+class Manager extends Employee {
+  -String name
+
+  +Manager(String name)
+  +void accept(Visitor)
+  +int getProducts()
+}
+
+class BusinessReport {
+  -List<Employee> employees
+
+  +void add(Employee)
+  +void remove(Employee)
+  +void showReport(Visitor)
+}
+
+note as N
+    @Override
+    public void accept(Visitor) {
+        visitor.visit(this);
+    }
+end note
+
+Engineer .. N
+Manager .. N
+
+@enduml

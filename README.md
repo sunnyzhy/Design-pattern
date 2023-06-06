@@ -49,4 +49,4 @@
 - [状态模式（State Pattern）](./spring-cloud-design-pattern/behavior-state-pattern '状态模式（State Pattern）')
 - [策略模式（Strategy Pattern）](./spring-cloud-design-pattern/behavior-strategy-pattern '策略模式（Strategy Pattern）')
 - [模板模式（Template Pattern）](./spring-cloud-design-pattern/behavior-template-pattern '模板模式（Template Pattern）')
-- [访问者模式（Visitor Pattern）](./spring-cloud-design-pattern/ '访问者模式（Visitor Pattern）')
+- [访问者模式（Visitor Pattern）](./spring-cloud-design-pattern/behavior-visitor-pattern '访问者模式（Visitor Pattern）')

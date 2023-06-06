@@ -38,4 +38,4 @@
 - [状态模式（State Pattern）](./behavior-state-pattern '状态模式（State Pattern）')
 - [策略模式（Strategy Pattern）](./behavior-strategy-pattern '策略模式（Strategy Pattern）')
 - [模板模式（Template Pattern）](./behavior-template-pattern '模板模式（Template Pattern）')
-- [访问者模式（Visitor Pattern）](./ '访问者模式（Visitor Pattern）')
+- [访问者模式（Visitor Pattern）](./behavior-visitor-pattern '访问者模式（Visitor Pattern）')

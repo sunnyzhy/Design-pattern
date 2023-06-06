@@ -7,28 +7,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="structure-facade-pattern" />
         <module name="structure-adapter-pattern" />
         <module name="creation-singleton-pattern" />
-        <module name="behavior-template-pattern" />
-        <module name="creation-factory-method-pattern" />
         <module name="creation-prototype-pattern" />
         <module name="behavior-iterator-pattern" />
         <module name="structure-decorator-pattern" />
-        <module name="behavior-memento-pattern" />
         <module name="structure-flyweight-pattern" />
         <module name="behavior-observer-pattern" />
-        <module name="structure-bridge-pattern" />
         <module name="structure-composite-pattern" />
+        <module name="creation-abstract-factory-pattern" />
+        <module name="behavior-command-pattern" />
+        <module name="behavior-visitor-pattern" />
+        <module name="structure-facade-pattern" />
+        <module name="behavior-template-pattern" />
+        <module name="creation-factory-method-pattern" />
+        <module name="behavior-memento-pattern" />
+        <module name="structure-bridge-pattern" />
         <module name="behavior-mediator-pattern" />
         <module name="creation-simple-factory-pattern" />
         <module name="behavior-state-pattern" />
         <module name="creation-builder-pattern" />
-        <module name="creation-abstract-factory-pattern" />
         <module name="structure-proxy-pattern" />
         <module name="behavior-responsibility-pattern" />
         <module name="behavior-interpreter-pattern" />
-        <module name="behavior-command-pattern" />
         <module name="behavior-strategy-pattern" />
         <module name="structure-filter-pattern" />
       </profile>
@@ -49,6 +50,7 @@
       <module name="behavior-state-pattern" options="-parameters" />
       <module name="behavior-strategy-pattern" options="-parameters" />
       <module name="behavior-template-pattern" options="-parameters" />
+      <module name="behavior-visitor-pattern" options="-parameters" />
       <module name="creation-abstract-factory-pattern" options="-parameters" />
       <module name="creation-builder-pattern" options="-parameters" />
       <module name="creation-factory-method-pattern" options="-parameters" />

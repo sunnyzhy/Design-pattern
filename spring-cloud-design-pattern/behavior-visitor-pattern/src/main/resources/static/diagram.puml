@@ -1,0 +1,56 @@
+@startuml
+
+Visitor o-- ConcreteElementA
+Visitor o-- ConcreteElementB
+Element o-- Visitor
+ObjectStructure o-- Element
+ObjectStructure o-- Visitor
+
+interface Visitor {
+  +void visit(ConcreteElementA element)
+  +void visit(ConcreteElementB element)
+}
+
+class ConcreteVisitorA implements Visitor {
+  +void visit(ConcreteElementA element)
+  +void visit(ConcreteElementB element)
+}
+
+class ConcreteVisitorB implements Visitor {
+  +void visit(ConcreteElementA element)
+  +void visit(ConcreteElementB element)
+}
+
+interface Element {
+  +void accept(Visitor visitor)
+}
+
+class ConcreteElementA implements Element {
+  +String operationA()
+  +void accept(Visitor visitor)
+}
+
+class ConcreteElementB implements Element {
+  +String operationB()
+  +void accept(Visitor visitor)
+}
+
+class ObjectStructure {
+  -List<Element> list
+
+  +void add(Element element)
+  +void remove(Element element)
+  +void accept(Visitor visitor)
+}
+
+note as N
+    public void accept(Visitor visitor)
+    {
+        visitor.visit(this);
+    }
+end note
+
+ConcreteElementA .. N
+ConcreteElementB .. N
+
+@enduml

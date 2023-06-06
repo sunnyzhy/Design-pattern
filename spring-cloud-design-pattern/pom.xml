@@ -29,6 +29,7 @@
         <module>behavior-state-pattern</module>
         <module>behavior-strategy-pattern</module>
         <module>behavior-template-pattern</module>
+        <module>behavior-visitor-pattern</module>
     </modules>
 
     <parent>
