@@ -18,8 +18,10 @@
 ### 示例
 
 - 传统 Builder 模式
+
   ![建造者模式（Builder Pattern）](src/main/resources/static/demo/tradition/diagram-demo.png '建造者模式（Builder Pattern）')
 - 当前 Builder 模式
+
    ![建造者模式（Builder Pattern）](src/main/resources/static/demo/current/diagram-demo.png '建造者模式（Builder Pattern）')
 
 ## 总结
