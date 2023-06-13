@@ -1,6 +1,6 @@
-package org.springframework.cloud.pattern.builder;
+package org.springframework.cloud.pattern.tradition.builder;
 
-import org.springframework.cloud.pattern.product.Computer;
+import org.springframework.cloud.pattern.tradition.product.Computer;
 
 /**
  * @author zhy
@@ -10,7 +10,6 @@ public abstract class ComputerBuilder {
     protected Computer computer = new Computer();
 
     public abstract void buildCpu();
-
 
     public abstract void buildMemory();
 

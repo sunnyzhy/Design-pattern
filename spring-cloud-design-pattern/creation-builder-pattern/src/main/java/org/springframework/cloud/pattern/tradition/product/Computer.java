@@ -1,4 +1,4 @@
-package org.springframework.cloud.pattern.product;
+package org.springframework.cloud.pattern.tradition.product;
 
 /**
  * @author zhy

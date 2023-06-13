@@ -1,7 +1,7 @@
-package org.springframework.cloud.pattern.director;
+package org.springframework.cloud.pattern.tradition.director;
 
-import org.springframework.cloud.pattern.builder.ComputerBuilder;
-import org.springframework.cloud.pattern.product.Computer;
+import org.springframework.cloud.pattern.tradition.builder.ComputerBuilder;
+import org.springframework.cloud.pattern.tradition.product.Computer;
 
 /**
  * @author zhy

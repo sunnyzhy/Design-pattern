@@ -1,0 +1,39 @@
+@startuml
+
+Computer *-- BuilderImpl
+Computer *-- Builder
+BuilderImpl <-- Computer
+
+class Computer {
+  -final String CPU
+  -final String memory
+  -final String motherboard
+  -final String hardDisk
+
+  -Computer(BuilderImpl builder)
+  +static Builder newBuilder()
+  static Computer create(BuilderImpl builder)
+}
+
+interface Builder {
+  +Builder cpu(String cpu)
+  +Builder memory(String memory)
+  +Builder motherBoard(String motherboard)
+  +Builder hardDisk(String hardDisk)
+  +Computer build()
+}
+
+class BuilderImpl implements Builder {
+  String cpu
+  String memory
+  String motherboard
+  String hardDisk
+
+  +Builder cpu(String cpu)
+  +Builder memory(String memory)
+  +Builder motherBoard(String motherboard)
+  +Builder hardDisk(String hardDisk)
+  +Computer build()
+}
+
+@enduml
