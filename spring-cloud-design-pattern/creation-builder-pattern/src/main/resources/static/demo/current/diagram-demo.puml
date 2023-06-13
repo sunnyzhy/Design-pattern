@@ -36,4 +36,37 @@ class BuilderImpl implements Builder {
   +Computer build()
 }
 
+note as N1
+    private Computer(BuilderImpl builder) {
+        this.cpu = builder.cpu;
+        this.memory = builder.memory;
+        this.motherboard = builder.motherboard;
+        this.hardDisk = builder.hardDisk;
+    }
+end note
+
+note as N2
+    public static Builder newBuilder() {
+        return new BuilderImpl();
+    }
+end note
+
+note as N3
+    static Computer create(BuilderImpl builder) {
+        return new Computer(builder);
+    }
+end note
+
+note as M
+    @Override
+    public Computer build() {
+        return Computer.create(this);
+    }
+end note
+
+Computer .. N1
+Computer .. N2
+Computer .. N3
+BuilderImpl .. M
+
 @enduml

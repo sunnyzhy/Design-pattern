@@ -5,6 +5,9 @@ package org.springframework.cloud.pattern.current;
  * @date 2023/6/13 16:39
  */
 public class BuilderImpl implements Builder {
+    /**
+     * package-private 成员变量，仅在本包中可见
+     */
     String cpu;
     String memory;
     String motherboard;
